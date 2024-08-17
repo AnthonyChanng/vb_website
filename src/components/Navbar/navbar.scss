@@ -1,0 +1,51 @@
+.navbar-section {
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 2px solid black;
+}
+
+.navbar-container {
+  height: 100%;
+}
+
+.navbar-flex {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.brvb {
+  height: 60px;
+  width: auto;
+  margin: auto;
+  padding-right: 10px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 30px;
+  margin: 0 10px;
+  transition: all 0.5s ease;
+}
+
+.sky {
+  transition: all 0.5s ease;
+  margin-right: 20px;
+}
+
+.icon:hover,
+.sky:hover {
+  color: var(--secondary-color);
+}
