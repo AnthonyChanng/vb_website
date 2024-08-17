@@ -1,8 +1,8 @@
 import "./navbar.scss";
-import brvb from "./assets/images/brvb.jpg";
+import brvb from "../../assets/images/brvb.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import hudl from "./assests/images/hudl.jpg";
+import hudl from "../../assets/images/hudl.jpg";
 
 export default function Navbar() {
   return (
