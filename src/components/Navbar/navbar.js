@@ -3,6 +3,9 @@ import brvb from "../../assets/images/brvb.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import hudl from "../../assets/images/hudl.jpg";
+import highPerform from "../../assets/images/njhighperformance.webp";
+import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 export default function Navbar() {
   return (
@@ -11,7 +14,9 @@ export default function Navbar() {
         <div className="container navbar-container">
           <div className="flex navbar-flex">
             <div className="logo">
-              <img src={brvb} alt="brvb" />{" "}
+              <Link to="/">
+                <img className="img-logo" src={brvb} alt="brvb" />{" "}
+              </Link>
             </div>
             <div className="name">
               <h1 className="h1"> Bridgewater-Raritan Highschool Volleyball</h1>
@@ -36,6 +41,18 @@ export default function Navbar() {
                 rel="noreferrer"
               >
                 <FontAwesomeIcon icon={hudl} color="black" className="icon" />
+              </a>
+              <a
+                className="highperformance"
+                href="https://www.njhighperformancevolleyball.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={highPerform}
+                  color="black"
+                  className="icon"
+                />
               </a>
             </div>
           </div>
