@@ -34,26 +34,12 @@ export default function Navbar() {
                   className="icon"
                 />
               </a>
-              <a
-                className="hudl"
-                href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon icon={hudl} color="black" className="icon" />
-              </a>
-              <a
-                className="highperformance"
-                href="https://www.njhighperformancevolleyball.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={highPerform}
-                  color="black"
-                  className="icon"
-                />
-              </a>
+              <div className="BRVBhudl">
+                <a href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball">
+                  {" "}
+                  <img className="img-hudl" src={hudl} alt="hudl" /> {""}
+                </a>
+              </div>
             </div>
           </div>
         </div>

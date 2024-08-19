@@ -1,5 +1,4 @@
 import "./bottombar.scss";
-
 export default function Bottombar() {
   return (
     <section className="topsection bottombar-section">
