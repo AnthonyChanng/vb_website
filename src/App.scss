@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+.top-section {
+  margin-top: 100px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: var(--container-width);
+  height: auto;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  height: auto;
+}
+
+.grid {
+  display: grid;
+  height: auto;
+}
+
+.line {
+  outline: 1px solid grey;
+}
+
+:root {
+  --primary-color: #1d3557;
+  --secondary-color: #e63946;
+
+  --container-width: 1200px;
+}

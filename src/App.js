@@ -1,16 +1,22 @@
-import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home/home";
 import Layout from "./components/Layout/layout";
+import Navbar from "./components/Navbar/navbar";
+import Bottombar from "./components/Bottombar/bottombar";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            {/* <Route index element={<Bottombar />} /> */}
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 }

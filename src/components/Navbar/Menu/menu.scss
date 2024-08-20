@@ -1,0 +1,12 @@
+.dropdown {
+  width: 10px;
+  height: 15px;
+  border-radius: 4px;
+  display: flex;
+  background-color: black;
+}
+
+.dropdown:hover {
+  background-color: grey;
+  transition: 0.5s;
+}

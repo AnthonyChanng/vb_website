@@ -1,7 +1,7 @@
 .navbar-section {
   z-index: 5;
-  position: fixed;
-  top: 0px;
+  // position: fixed;
+  top: 100px;
   width: 100%;
   height: 100px;
   background-color: white;
@@ -17,35 +17,27 @@
   justify-content: space-between;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.img-logo {
+  height: 100%;
 }
-
-.brvb {
-  height: 60px;
-  width: auto;
-  margin: auto;
-  padding-right: 10px;
-}
-
-.socials {
-  display: flex;
-  align-items: center;
+.schoolName {
+  width: 550px;
+  font-size: 27.5px;
+  padding-top: 1.5%;
+  font: "fantasy";
 }
 
 .icon {
-  font-size: 30px;
-  margin: 0 10px;
+  height: 60%;
   transition: all 0.5s ease;
+  padding-top: 20%;
 }
 
-.sky {
-  transition: all 0.5s ease;
-  margin-right: 20px;
-}
-
-.icon:hover,
-.sky:hover {
+.icon:hover {
   color: var(--secondary-color);
+}
+
+.img-high {
+  height: 75%;
+  padding-top: 10%;
 }

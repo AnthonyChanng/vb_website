@@ -1,10 +1,9 @@
-// import "./bottombar.scss";
-
+import "./bottombar.scss";
 export default function Bottombar() {
   return (
-    <section className="topsection home-section">
-      <div className="container home-container">
-        <div className="flex home-flex">
+    <section className="topsection bottombar-section">
+      <div className="container bottombar-container">
+        <div className="flex bottombar-flex">
           <h1>hi</h1>
         </div>
       </div>
