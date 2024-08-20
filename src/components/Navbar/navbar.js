@@ -2,7 +2,8 @@ import "./navbar.scss";
 import brvb from "../../assets/images/brvb.jpg";
 import highPerform from "../../assets/images/njhighperformance.webp";
 import { Link } from "react-router-dom";
-import Menu from "./Menu/menu.js";
+import { IoMenu } from "react-icons/io5";
+import React, { useState } from "react";
 export default function Navbar() {
   return (
     <>
@@ -27,12 +28,64 @@ export default function Navbar() {
               </a>
             </div>
             <div className="dropmenu">
-              <Menu content={<p>hello world</p>} />
+              <Menu>
+                <MenuItem icon={<IoMenu />}>
+                  <div className="Links">
+                    <div className="Home">
+                      <Link to="/">Home</Link>
+                    </div>
+                    <div className="Boys">
+                      <Link to="/Boys">Boys</Link>
+                    </div>
+                    <div className="Girls">
+                      <Link to="/Girls">Girls</Link>
+                    </div>
+                    <div className="Coaches">
+                      <Link to="/Coaches">Coaches</Link>
+                    </div>
+                  </div>
+                </MenuItem>
+              </Menu>
             </div>
           </div>
         </div>
       </div>
       ;
     </>
+  );
+}
+
+function Menu(props) {
+  return (
+    <div className="menu">
+      <div className="menu-drop">{props.children}</div>
+    </div>
+  );
+}
+
+function MenuItem(props) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="nav-item">
+      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+        {props.icon}
+      </a>
+      {open && props.children}
+    </div>
+  );
+}
+
+function MenuDrop() {
+  function MenuItem(props) {
+    return (
+      <a href="#" className="menu-item">
+        {props.childern}
+      </a>
+    );
+  }
+  return (
+    <div className="dropdown">
+      <MenuItem></MenuItem>
+    </div>
   );
 }
