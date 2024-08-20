@@ -6,6 +6,7 @@
   height: 100px;
   background-color: white;
   border-bottom: 2px solid black;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .navbar-container {
@@ -21,9 +22,9 @@
   height: 100%;
 }
 .schoolName {
-  width: 550px;
+  width: 600%;
   font-size: 27.5px;
-  padding-top: 1.5%;
+  padding-top: 2.5%;
   font: "fantasy";
 }
 
@@ -33,5 +34,57 @@
 }
 
 .dropmenu {
-  padding-top: 2%;
+  display: flex;
+  padding-top: 3.75%;
+  transform: scale(4);
+}
+
+.dropmenu:hover {
+  cursor: pointer;
+}
+
+.Links {
+  position: absolute;
+  top: 62.5%;
+  width: 250%;
+  transform: translateX(-45%);
+  background-color: white;
+  font-size: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Home {
+  border: var(--border);
+  border-color: black;
+}
+.Boys {
+  border: var(--border);
+  border-color: black;
+}
+.Girls {
+  border: var(--border);
+  border-color: black;
+}
+.Coaches {
+  border: var(--border);
+  border-color: black;
+}
+.Home:hover {
+  transition: 0.5s;
+  background-color: grey;
+}
+
+.Coaches:hover {
+  transition: 0.5s;
+  background-color: grey;
+}
+
+.Boys:hover {
+  transition: 0.5s;
+  background-color: grey;
+}
+
+.Girls:hover {
+  transition: 0.5s;
+  background-color: grey;
 }
