@@ -1,12 +1,11 @@
-.dropdown {
-  width: 10px;
-  height: 15px;
-  border-radius: 4px;
+.button {
+  width: 55px;
+  height: 55px;
   display: flex;
-  background-color: black;
+  transform: scale(0.5);
 }
 
-.dropdown:hover {
-  background-color: grey;
+.button:hover {
   transition: 0.5s;
+  cursor: pointer;
 }

@@ -26,7 +26,9 @@ export default function Navbar() {
                 {""}
               </a>
             </div>
-            <Menu />
+            <div className="dropmenu">
+              <Menu content={<p>hello world</p>} />
+            </div>
           </div>
         </div>
       </div>
