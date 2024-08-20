@@ -27,17 +27,11 @@
   font: "fantasy";
 }
 
-.icon {
-  height: 60%;
-  transition: all 0.5s ease;
-  padding-top: 20%;
-}
-
-.icon:hover {
-  color: var(--secondary-color);
-}
-
 .img-high {
   height: 75%;
   padding-top: 10%;
+}
+
+.dropmenu {
+  padding-top: 2%;
 }
