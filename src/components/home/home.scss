@@ -2,8 +2,24 @@
   z-index: 5;
   top: 0px;
   width: 100%;
-  height: 100px;
+  height: 100%;
   background-color: white;
-  border-bottom: 2px solid black;
-  padding-top: 150px;
+}
+.home-container {
+  width: 100%;
+  height: 100%;
+}
+
+.backgrounds {
+  width: 100%;
+  height: 460px;
+  display: flex;
+}
+
+.boyBackground {
+  width: 50%;
+}
+
+.girlBackground {
+  width: 50%;
 }
