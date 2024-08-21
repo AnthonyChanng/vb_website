@@ -32,16 +32,16 @@ export default function Navbar() {
                 <MenuItem icon={<IoMenu />}>
                   <div className="Links">
                     <div className="Home">
-                      <Link to="/">Home</Link>
+                      <Link to="/">HOME</Link>
                     </div>
                     <div className="Boys">
-                      <Link to="/Boys">Boys</Link>
+                      <Link to="/Boys">BOYS</Link>
                     </div>
                     <div className="Girls">
-                      <Link to="/Girls">Girls</Link>
+                      <Link to="/Girls">GIRLS</Link>
                     </div>
                     <div className="Coaches">
-                      <Link to="/Coaches">Coaches</Link>
+                      <Link to="/Coaches">COACHES</Link>
                     </div>
                   </div>
                 </MenuItem>
@@ -50,7 +50,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      ;
     </>
   );
 }
@@ -71,21 +70,6 @@ function MenuItem(props) {
         {props.icon}
       </a>
       {open && props.children}
-    </div>
-  );
-}
-
-function MenuDrop() {
-  function MenuItem(props) {
-    return (
-      <a href="#" className="menu-item">
-        {props.childern}
-      </a>
-    );
-  }
-  return (
-    <div className="dropdown">
-      <MenuItem></MenuItem>
     </div>
   );
 }

@@ -35,7 +35,7 @@
 
 .dropmenu {
   display: flex;
-  padding-top: 3.75%;
+  padding-top: 3.5%;
   transform: scale(4);
 }
 
@@ -46,45 +46,51 @@
 .Links {
   position: absolute;
   top: 62.5%;
-  width: 250%;
+  width: 175%;
   transform: translateX(-45%);
   background-color: white;
-  font-size: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 7%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: var(--border);
+  border-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Home {
-  border: var(--border);
+  border-bottom: 1px;
   border-color: black;
 }
 .Boys {
-  border: var(--border);
+  border-bottom: 1px;
   border-color: black;
 }
 .Girls {
-  border: var(--border);
+  border-bottom: 1px;
   border-color: black;
 }
 .Coaches {
-  border: var(--border);
+  border-bottom: 1px;
   border-color: black;
 }
 .Home:hover {
   transition: 0.5s;
-  background-color: grey;
+  background-color: rgb(221, 218, 218);
 }
 
 .Coaches:hover {
   transition: 0.5s;
-  background-color: grey;
+  background-color: rgb(221, 218, 218);
 }
 
 .Boys:hover {
   transition: 0.5s;
-  background-color: grey;
+  background-color: rgb(221, 218, 218);
 }
 
 .Girls:hover {
   transition: 0.5s;
-  background-color: grey;
+  background-color: rgb(221, 218, 218);
 }
