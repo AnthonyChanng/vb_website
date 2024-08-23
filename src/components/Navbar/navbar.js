@@ -32,7 +32,9 @@ export default function Navbar() {
                 <MenuItem icon={<IoMenu />}>
                   <div className="Links">
                     <div className="Home">
-                      <Link to="/">HOME</Link>
+                      <div className="HomeText">
+                        <Link to="/">HOME</Link>
+                      </div>
                     </div>
                     <div className="Boys">
                       <Link to="/Boys">BOYS</Link>
