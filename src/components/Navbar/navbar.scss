@@ -1,6 +1,4 @@
 .navbar-section {
-  z-index: 5;
-  // position: fixed;
   top: 100px;
   width: 100%;
   height: 100px;
@@ -15,6 +13,7 @@
 
 .navbar-flex {
   height: 100%;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -22,8 +21,8 @@
   height: 100%;
 }
 .schoolName {
-  width: 600%;
-  font-size: 27.5px;
+  width: 100%;
+  font-size: 175%;
   padding-top: 2.5%;
   font: "fantasy";
 }
@@ -36,7 +35,7 @@
 .dropmenu {
   display: flex;
   padding-top: 3.5%;
-  transform: scale(4);
+  transform: scale(400%);
 }
 
 .dropmenu:hover {
@@ -47,7 +46,7 @@
   position: absolute;
   top: 62.5%;
   width: 175%;
-  transform: translateX(-45%);
+  transform: translateX(-25%);
   background-color: white;
   font-size: 7%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -60,20 +59,28 @@
 }
 
 .Home {
-  border-bottom: 1px;
-  border-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .Boys {
-  border-bottom: 1px;
-  border-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .Girls {
-  border-bottom: 1px;
-  border-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .Coaches {
-  border-bottom: 1px;
-  border-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .Home:hover {
   transition: 0.5s;
