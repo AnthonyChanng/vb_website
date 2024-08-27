@@ -1,12 +1,14 @@
 .boys-section {
   width: 100%;
-  max-height: 100%;
+  height: 750px;
   background-color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .boys-container {
   height: 100%;
+  width: 100%;
+  margin: 0% 5%;
 }
 
 .boys-flex {
@@ -14,7 +16,7 @@
   width: 100%;
 }
 .socialsBoys {
-  width: 35%;
+  width: 17.5%;
   display: flex;
   height: 15%;
   justify-content: space-between;
@@ -22,19 +24,21 @@
 
 .boysDescription {
   width: 100%;
-  height: 25%;
-  padding-top: 10%;
-  font-size: 100%;
+  height: 50%;
+  padding-top: 5%;
+  font-size: 112.5%;
 }
 
 .imageGallery {
-  width: 60%;
-  padding: 5% 0%;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .rightSide {
-  width: 50%;
-  padding-left: 5%;
+  width: 45%;
+  padding-left: 2.5%;
 }
 .boysHudl {
   width: 100%;
@@ -51,27 +55,31 @@
 }
 
 .hudlBoys {
-  width: 40%;
-  border: var(--border);
-  border-width: 2px;
+  width: 37.5%;
+  height: 50%;
 }
 .instagram {
   width: 50%;
 }
 
 .boysInsta {
-  border: var(--border);
-  border-width: 2px;
   width: 50%;
+  height: 50%;
 }
 
 .boysTitle {
   display: flex;
   justify-content: center;
-  font-size: 75%;
+  font-size: 50%;
+  font-weight: bold;
 }
 
 .iconBoys:hover {
   color: grey;
   transition: 0.5s;
+}
+
+.boysAwards {
+  font-size: 75%;
+  padding-bottom: 2%;
 }
