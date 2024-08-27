@@ -15,6 +15,7 @@ const description = () => {
             just their many championship titles, but also the lasting impact
             that it leaves on its players. <br></br>
             <br></br>
+            At every level of the team, the competivitive spirit burns deep.
             Joining the team is an opportunity to be part of one of the most
             decorated volleyball programs in the state. However, the program is
             much more than just winning, the atmosphere that has been created is
