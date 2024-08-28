@@ -11,33 +11,57 @@ export default function Bottombar() {
       <section className="topsection bottombar-section">
         <div className="container bottombar-container">
           <div className="flex bottombar-flex">
-            <div className="leftSide">
+            <div className="top">
               {" "}
-              <div className="logos">
-                <div className="hslogo">
-                  <Link to="/">
-                    <img className="hsimg" src={brvb} alt="brvb" />{" "}
-                  </Link>
-                </div>
-                <div className="camplogo">
-                  <a
-                    href="https://www.njhighperformancevolleyball.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img
-                      className="highlogo"
-                      src={highPerform}
-                      alt="highPerform"
-                    />{" "}
-                    {""}
-                  </a>
-                </div>
-              </div>
-              <div className="extraInfo">
+              <div className="left-bottom">
+                <Link to="/">
+                  <img className="hsimg" src={brvb} alt="brvb" />{" "}
+                </Link>
+                <a
+                  href="https://www.njhighperformancevolleyball.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="highlogo"
+                    src={highPerform}
+                    alt="highPerform"
+                  />{" "}
+                  {""}
+                </a>
                 <div className="location">
                   Bridgewater-Raritan Highschool<br></br>
                   600 Garretson Rd, Bridgewater, NJ 08807
+                </div>
+              </div>
+              <div className="right-bottom">
+                <div className="imgOrigin">
+                  Images from ktusim and PhotographedBySam
+                  <div className="links">
+                    <div className="smugMug">
+                      <a
+                        href="https://ktusim.smugmug.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img className="smugLogo" src={smug} alt="smug" />{" "}
+                      </a>
+                    </div>
+                    <div className="insta">
+                      <a
+                        className="instagram"
+                        href="https://www.instagram.com/photographedbysamm/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          color="black"
+                          className="icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="internalLinks">
                   Links:
@@ -47,35 +71,6 @@ export default function Bottombar() {
                     <Link to="/Girls">GIRLS</Link>
                     <Link to="/Coaches">COACHES</Link>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="imgOrigin">
-              Images from ktusim and PhotographedBySam
-              <div className="links">
-                <div className="smugMug">
-                  <a
-                    href="https://ktusim.smugmug.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img className="smugLogo" src={smug} alt="smug" />{" "}
-                  </a>
-                </div>
-                <div className="insta">
-                  <a
-                    className="instagram"
-                    href="https://www.instagram.com/photographedbysamm/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      color="black"
-                      className="icon"
-                    />
-                  </a>
                 </div>
               </div>
             </div>
