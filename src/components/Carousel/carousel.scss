@@ -50,12 +50,12 @@
 
 .carousel_arrow_left,
 .carousel_arrow_right {
-  color: black;
   position: absolute;
   font-size: 200%;
   top: 50%;
   transform: translate(0, -50%);
   background-color: gainsboro;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -49,9 +49,6 @@ export default function Navbar() {
                   <Link to="/Girls">
                     <div className="link">GIRLS</div>
                   </Link>
-                  <Link to="/Coaches">
-                    <div className="link">COACHES</div>
-                  </Link>
                 </div>
               </div>
             </div>
