@@ -1,38 +1,25 @@
 .bottombar-section {
-  z-index: 5;
-  top: 100px;
-  width: 100%;
-  height: 100%;
   background-color: white;
-  border-top: 2px solid black;
+  border-top: 4px solid grey;
   font-family: Georgia, "Times New Roman", Times, serif;
+  height: 150px;
 }
 .bottombar-flex {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-
-.bottombar-container {
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
+  align-items: center;
 }
 
 .logos {
-  width: 40%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  padding-top: 1%;
 }
 .imgOrigin {
-  padding-top: 1%;
-  width: 25%;
-  height: 200px;
+  width: 20%;
+  height: 150px;
   display: flex;
   flex-direction: column;
-  font-size: 150%;
+  align-items: center;
 }
 
 .smugLogo {
@@ -40,24 +27,15 @@
   border-radius: 50%;
 }
 
-.smugMug {
-  height: 100%;
-}
-
 .icon {
-  height: 100%;
-}
-
-.instagram {
   height: 100%;
 }
 
 .links {
   display: flex;
-  height: 25%;
+  height: 50%;
   justify-content: space-between;
-  width: 50%;
-  padding-top: 1%;
+  width: 70%;
 }
 
 .icon:hover {
@@ -66,28 +44,22 @@
 }
 
 .hsimg {
-  width: 100%;
-  padding-bottom: 2%;
+  height: 150px;
 }
-
-.highlogo {
-  width: 100%;
-  padding-top: 2%;
+.camplogo {
+  height: 150px;
 }
 
 .extraInfo {
-  width: 40%;
-  padding-top: 1%;
+  width: 50%;
   font-size: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 .internalLinks {
-  padding-top: 5%;
   display: flex;
   flex-direction: column;
-  font-size: 100%;
 }
 
 .pages {
@@ -103,6 +75,28 @@
 
 .leftSide {
   display: flex;
-  width: 40%;
+  width: 70%;
   justify-content: space-between;
+}
+
+@media (width <= 1150px) {
+  .bottombar-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .extraInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

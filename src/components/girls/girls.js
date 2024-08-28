@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import hudl from "../../assets/images/hudl.jpg";
+import hudl from "../../assets/images/hudl.png";
 import { girlsData } from "../../assets/data/girlsData";
 import "./girls.scss";
 import { Carousel } from "../Carousel/carousel";
@@ -61,7 +61,7 @@ export default function Girls() {
                   >
                     <FontAwesomeIcon
                       icon={faInstagram}
-                      color="black"
+                      color="white"
                       className="iconGirls"
                     />
                   </a>
@@ -69,7 +69,11 @@ export default function Girls() {
                 </div>
                 <div className="hudlGirls">
                   <div className="BRVBhudl">
-                    <a href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball">
+                    <a
+                      href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {" "}
                       <img className="girlsHudl" src={hudl} alt="hudl" /> {""}
                     </a>

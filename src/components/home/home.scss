@@ -1,24 +1,45 @@
 .home-section {
-  z-index: 5;
-  top: 0px;
   width: 100%;
-  height: 100%;
-  background-color: white;
+  height: 1100px;
+  background-color: rgb(26, 24, 24);
+  color: white;
 }
 .home-container {
   width: 100%;
   height: 100%;
 }
 
-.backgrounds {
-  width: 100%;
+.back-pics {
   display: flex;
+  flex-direction: row;
 }
-
-.boyBackground {
+.background {
   width: 50%;
 }
 
-.girlBackground {
-  width: 50%;
+@media (width <= 1000px) {
+  .back-pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .background {
+    width: 100%;
+  }
+  .home-section {
+    height: 1900px;
+  }
+}
+
+.description {
+  height: 500px;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.descriptionSummary {
+  display: flex;
+  justify-content: center;
+  font-size: 150%;
+  padding: 2.5% 0%;
+  max-width: 100%;
 }

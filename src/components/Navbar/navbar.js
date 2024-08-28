@@ -2,7 +2,6 @@ import "./navbar.scss";
 import brvb from "../../assets/images/brvb.jpg";
 import highPerform from "../../assets/images/njhighperformance.webp";
 import { Link } from "react-router-dom";
-import { IoMenu } from "react-icons/io5";
 import React, { useState } from "react";
 export default function Navbar() {
   return (
@@ -26,28 +25,29 @@ export default function Navbar() {
                 <img className="img-high" src={highPerform} alt="highPerform" />{" "}
                 {""}
               </a>
-            </div>
-            <div className="dropmenu">
-              <Menu>
-                <MenuItem icon={<IoMenu />}>
-                  <div className="Links">
-                    <div className="Home">
-                      <div className="HomeText">
-                        <Link to="/">HOME</Link>
-                      </div>
-                    </div>
-                    <div className="Boys">
-                      <Link to="/Boys">BOYS</Link>
-                    </div>
-                    <div className="Girls">
-                      <Link to="/Girls">GIRLS</Link>
-                    </div>
-                    <div className="Coaches">
-                      <Link to="/Coaches">COACHES</Link>
-                    </div>
-                  </div>
-                </MenuItem>
-              </Menu>
+              <div className="dropmenu">
+                <div
+                  onClick={() => {
+                    setOpen(!open);
+                  }}
+                >
+                  <Hamburger />
+                </div>
+                <div className={open ? "menu open-menu" : "menu closed-menu"}>
+                  <Link to="/">
+                    <div className="link">HOME</div>
+                  </Link>
+                  <Link to="/Boys">
+                    <div className="link"> BOYS</div>
+                  </Link>
+                  <Link to="/Girls">
+                    <div className="link">GIRLS</div>
+                  </Link>
+                  <Link to="/Coaches">
+                    <div className="link">COACHES</div>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
