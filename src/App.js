@@ -5,7 +5,6 @@ import Home from "./components/Home/home";
 import Layout from "./components/Layout/layout";
 import Boys from "./components/Boys/boys";
 import Girls from "./components/Girls/girls";
-import Coaches from "./components/Coaches/coaches";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/Boys" element={<Boys />} />
             <Route path="/Girls" element={<Girls />} />
-            <Route path="/Coaches" element={<Coaches />} />
           </Route>
         </Routes>
       </Router>

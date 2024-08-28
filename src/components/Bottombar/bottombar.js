@@ -20,7 +20,11 @@ export default function Bottombar() {
                   </Link>
                 </div>
                 <div className="camplogo">
-                  <a href="https://www.njhighperformancevolleyball.com/">
+                  <a
+                    href="https://www.njhighperformancevolleyball.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       className="highlogo"
                       src={highPerform}
@@ -51,7 +55,11 @@ export default function Bottombar() {
               Images from ktusim and PhotographedBySam
               <div className="links">
                 <div className="smugMug">
-                  <a href="https://ktusim.smugmug.com/">
+                  <a
+                    href="https://ktusim.smugmug.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img className="smugLogo" src={smug} alt="smug" />{" "}
                   </a>
                 </div>

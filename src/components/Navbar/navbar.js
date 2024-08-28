@@ -2,7 +2,6 @@ import "./navbar.scss";
 import brvb from "../../assets/images/brvb.jpg";
 import highPerform from "../../assets/images/njhighperformance.webp";
 import { Link } from "react-router-dom";
-import { IoMenu } from "react-icons/io5";
 import React, { useState } from "react";
 
 export default function Navbar() {
