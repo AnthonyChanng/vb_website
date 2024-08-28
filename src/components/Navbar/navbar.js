@@ -17,14 +17,12 @@ export default function Navbar() {
             </div>
             <div className="name">
               <h1 className="schoolName">
-                {" "}
                 Bridgewater-Raritan Highschool Volleyball
               </h1>
             </div>
             <div className="camp">
               <a href="https://www.njhighperformancevolleyball.com/">
                 <img className="img-high" src={highPerform} alt="highPerform" />{" "}
-                {""}
               </a>
             </div>
             <div className="dropmenu">
