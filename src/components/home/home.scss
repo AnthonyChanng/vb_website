@@ -92,6 +92,17 @@
 .third-girls-imgs {
   width: 28.5%;
 }
+@media (width <= 1550px) {
+  .merch {
+    height: 50%;
+  }
+  .description {
+    height: 25%;
+  }
+  .current-standings {
+    height: 50%;
+  }
+}
 @media (width <= 1000px) {
   .back-pics {
     display: flex;
@@ -104,46 +115,12 @@
     height: 20%;
   }
   .home-section {
-    height: 3000px;
+    height: 3300px;
   }
   .current-standings {
-    height: 45%;
+    height: 10%;
   }
 }
-
-@media (width <= 1200px) {
-  .description {
-    font-size: 15px;
-    height: 20%;
-  }
-}
-
-@media (width <= 800px) {
-  .schedule {
-    font-size: 10px;
-    margin: 0 10px;
-    height: 12.5%;
-  }
-  .description {
-    margin: 0 10px;
-  }
-  .third-bar {
-    margin: 0 10px;
-  }
-}
-
-@media (width <= 1550px) {
-  .merch {
-    height: 50%;
-  }
-  .description {
-    height: 25%;
-  }
-  .current-standings {
-    height: 50%;
-  }
-}
-
 @media (width <= 900px) {
   .third-bar {
     display: flex;
@@ -159,7 +136,7 @@
     height: 20%;
   }
   .current-standings {
-    height: 80%;
+    height: 60%;
   }
   .standing-items {
     width: 100%;
@@ -170,5 +147,48 @@
   .third-bar {
     height: 20%;
     margin: 0 0;
+  }
+}
+
+@media (width <= 800px) {
+  .schedule {
+    font-size: 10px;
+    margin: 0 10px;
+    height: 12.5%;
+  }
+  .description {
+    margin: 0 10px;
+    height: 30%;
+  }
+  .third-bar {
+    margin: 0 10px;
+    height: 30%;
+  }
+  .merch-logo {
+    height: 50%;
+  }
+  .current-standings {
+    height: 70%;
+  }
+}
+@media (width <= 520px) {
+  .description {
+    font-size: 10px;
+    height: 15%;
+  }
+  .home-section {
+    height: 2300px;
+  }
+  .schedule {
+    height: 20%;
+  }
+  .description {
+    height: 22.5%;
+  }
+  .third-bar {
+    height: 40%;
+  }
+  .left-side-third {
+    width: 80%;
   }
 }
