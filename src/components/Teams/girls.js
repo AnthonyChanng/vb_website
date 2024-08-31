@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import hudl from "../../assets/images/hudl.png";
 import { girlsData } from "../../assets/data/girlsData";
-import "./girls.scss";
+import "./teams.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Girls() {
   return (
     <>
-      <div className="topsection girls-section">
-        <div className="container girls-container">
-          <div className="flex girls-flex">
+      <div className="topsection team-section">
+        <div className="container team-container">
+          <div className="flex team-flex">
             <div className="imageGallery">
               <Carousel images={girlsData} />
             </div>
             <div className="rightSide">
-              <div className="girlsDescription">
+              <div className="team-description">
                 BRHS Girls Volleyball are four time state champs as well as four
                 time Somerset County Tournament Winners. The team has always
                 been a dominant force and challengers to the championship. They
@@ -38,7 +38,7 @@ export default function Girls() {
                 Tryouts are in August and be sure to join the Google Classroom
                 for extra details.{" "}
               </div>
-              <div className="girlsAwards">
+              <div className="team-awards">
                 <h1>TEAM AWARDS:</h1>
                 Madison Patton: All Skyland Conference Delware Divison First
                 Team <br></br>
@@ -51,8 +51,8 @@ export default function Girls() {
                 Izzy Antunes: All Skyland Conference Delware Divison Honorable
                 Mention <br></br>
               </div>
-              <div className="socialsGirls">
-                <div className="girlsInsta">
+              <div className="socials-team">
+                <div className="team-insta">
                   <a
                     className="instagram"
                     href="https://www.instagram.com/brhsgirlsvb/"
@@ -62,12 +62,12 @@ export default function Girls() {
                     <FontAwesomeIcon
                       icon={faInstagram}
                       color="white"
-                      className="iconGirls"
+                      className="icon-team"
                     />
                   </a>
-                  <div className="girlsTitle">Girls Instagram</div>
+                  <div className="team-title">Girls Instagram</div>
                 </div>
-                <div className="hudlGirls">
+                <div className="hudl-team">
                   <div className="BRVBhudl">
                     <a
                       href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
@@ -75,9 +75,9 @@ export default function Girls() {
                       rel="noreferrer"
                     >
                       {" "}
-                      <img className="girlsHudl" src={hudl} alt="hudl" /> {""}
+                      <img className="team-Hudl" src={hudl} alt="hudl" /> {""}
                     </a>
-                    <div className="girlsTitle">Girls Hudl</div>
+                    <div className="team-title">Girls Hudl</div>
                   </div>
                 </div>
               </div>

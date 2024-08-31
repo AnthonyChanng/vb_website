@@ -2,19 +2,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import hudl from "../../assets/images/hudl.png";
 import { boysData } from "../../assets/data/boysData";
-import "./boys.scss";
+import "./teams.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Boys() {
   return (
     <>
-      <div className="topsection boys-section">
-        <div className="container boys-container">
-          <div className="flex boys-flex">
+      <div className="topsection team-section">
+        <div className="container team-container">
+          <div className="flex team-flex">
             <div className="imageGallery">
               <Carousel images={boysData} />
             </div>
             <div className="rightSide">
-              <div className="boysDescription">
+              <div className="team-description">
                 The BRHS Boys Volleyball Team are back-to-back county champs as
                 well as back-to-back North Group 4 champs. They have dominated
                 these two tournaments these past two years and look to win for
@@ -39,7 +39,7 @@ export default function Boys() {
                 winning culture, join the team! Tryouts are in late March and be
                 sure to join the Google Classroom for more information.
               </div>
-              <div className="boysAwards">
+              <div className="team-awards">
                 <h1>TEAM AWARDS:</h1>
                 Harrison Fromberg: Skyland Conference Boys Volleyball Player of
                 the Year, Skyland Conference First Team, All-State Third Team,
@@ -52,8 +52,8 @@ export default function Boys() {
                 <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
                 Coach Corey Romanak: Skyland Conference Coach of the Year
               </div>
-              <div className="socialsBoys">
-                <div className="boysInsta">
+              <div className="socials-team">
+                <div className="team-insta">
                   <a
                     className="instagram"
                     href="https://www.instagram.com/brboysvolleyball/"
@@ -63,12 +63,12 @@ export default function Boys() {
                     <FontAwesomeIcon
                       icon={faInstagram}
                       color="white"
-                      className="iconBoys"
+                      className="icon-team"
                     />
                   </a>
-                  <div className="boysTitle">Boys Instagram</div>
+                  <div className="team-title">Boys Instagram</div>
                 </div>
-                <div className="hudlBoys">
+                <div className="hudl-team">
                   <div className="BRVBhudl">
                     <a
                       href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
@@ -76,9 +76,9 @@ export default function Boys() {
                       rel="noreferrer"
                     >
                       {" "}
-                      <img className="boysHudl" src={hudl} alt="hudl" /> {""}
+                      <img className="team-Hudl" src={hudl} alt="hudl" /> {""}
                     </a>
-                    <div className="boysTitle">Boys Hudl</div>
+                    <div className="team-title">Boys Hudl</div>
                   </div>
                 </div>
               </div>
