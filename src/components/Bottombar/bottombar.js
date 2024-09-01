@@ -36,7 +36,7 @@ export default function Bottombar() {
               </div>
               <div className="right-bottom">
                 <div className="imgOrigin">
-                  Images from ktusim and PhotographedBySam
+                  <div id="imgs">Images from ktusim and PhotographedBySam</div>
                   <div className="links">
                     <div className="smugMug">
                       <a
@@ -66,10 +66,18 @@ export default function Bottombar() {
                 <div className="internalLinks">
                   Links:
                   <div className="pages">
-                    <Link to="/">HOME</Link>
-                    <Link to="/Boys">BOYS</Link>
-                    <Link to="/Girls">GIRLS</Link>
-                    <Link to="/Coaches">COACHES</Link>
+                    <Link to="/" className="bot-link">
+                      HOME
+                    </Link>
+                    <Link to="/Boys" className="bot-link">
+                      BOYS
+                    </Link>
+                    <Link to="/Girls" className="bot-link">
+                      GIRLS
+                    </Link>
+                    <Link to="/Coaches" className="bot-link">
+                      COACHES
+                    </Link>
                   </div>
                 </div>
               </div>
