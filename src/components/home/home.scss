@@ -63,6 +63,7 @@
 .current-standings {
   height: 37.5%;
   border-bottom: 4px solid grey;
+  padding-bottom: 10px;
 }
 .merch {
   text-align: right;
@@ -91,6 +92,10 @@
 }
 .third-girls-imgs {
   width: 28.5%;
+}
+.merch-logo:hover {
+  transform: scale(1.01);
+  transition: 1s;
 }
 @media (width <= 1550px) {
   .merch {
@@ -181,6 +186,9 @@
   }
   .schedule {
     height: 20%;
+  }
+  .current-standings {
+    height: 67.5%;
   }
   .description {
     height: 22.5%;

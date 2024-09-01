@@ -1,0 +1,170 @@
+.girls-section {
+  width: 100%;
+  height: 3500px;
+  background-color: rgb(26, 24, 24);
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.girls-container {
+  height: 100%;
+  width: 90%;
+  margin: 0% 5%;
+}
+
+.girls-flex {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+.girls-first-bar {
+  height: 25%;
+  width: 100%;
+  display: flex;
+}
+.socials-girls {
+  width: 17.5%;
+  display: flex;
+  height: 15%;
+  justify-content: space-between;
+}
+
+.girls-description {
+  width: 100%;
+  height: 50%;
+  padding-top: 5%;
+  font-size: 17.5px;
+}
+
+.imageGallery {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.girls-rightSide {
+  width: 50%;
+  padding-left: 2.5%;
+}
+.girls-Hudl {
+  width: 100%;
+  height: 95%;
+}
+
+.BRVBhudl {
+  width: 100%;
+  height: 80%;
+}
+.icon-girls {
+  width: 100%;
+  height: 80%;
+}
+
+.hudl-girls {
+  width: 37.5%;
+  height: 50%;
+}
+.instagram {
+  width: 50%;
+}
+
+.girls-insta {
+  width: 50%;
+  height: 50%;
+}
+
+.girls-title {
+  display: flex;
+  justify-content: center;
+  font-size: 7.5px;
+  font-weight: bold;
+}
+
+.icon-girls:hover {
+  color: grey;
+  transition: 0.5s;
+}
+
+.girls-awards {
+  font-size: 75%;
+  padding-bottom: 2%;
+}
+
+.girls-players-tab {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.girls-players-title {
+  border-bottom: 4px solid grey;
+  text-align: center;
+}
+
+.girls-player {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  text-align: center;
+}
+.girls-player-img {
+  height: 80%;
+}
+.girls-roster {
+  height: 32.5%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#girls-no-img {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  transform: translate(0, 50%);
+}
+.girls-third-bar {
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.girls-coach {
+  height: 100%;
+  width: 55%;
+}
+.josh {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.coach-title {
+  border-bottom: 4px solid grey;
+}
+.girls-recent-news {
+  width: 40%;
+  text-align: end;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.girls-news-img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid grey;
+}
+.girls-news-img:hover {
+  transform: scale(1.01);
+  transition: 1s;
+}
+.girls-news-item {
+  height: 40%;
+  text-align: center;
+  font-size: 20px;
+}
+.news-title {
+  border-bottom: 4px solid grey;
+}
+.coach-description {
+  font-size: 20px;
+}
