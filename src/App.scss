@@ -3,7 +3,7 @@ a {
   color: black;
 }
 
-.section {
+section {
   width: 100%;
   height: auto;
   padding: 50px 0;
@@ -37,6 +37,7 @@ a {
 :root {
   --primary-color: #1d3557;
   --secondary-color: #e63946;
+  --border-radius: 10px;
 
   --container-width: 1200px;
 }

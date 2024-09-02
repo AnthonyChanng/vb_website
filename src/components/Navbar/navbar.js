@@ -19,7 +19,7 @@ export default function Navbar() {
                 </Link>
               </div>
               <h1 className="school-name">
-                Bridgewater-Raritan Highschool Volleyball
+                Bridgewater-Raritan High School Volleyball
               </h1>
             </div>
             <div id="right-navbar">

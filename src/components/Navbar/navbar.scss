@@ -2,7 +2,6 @@
   height: 80px;
   background-color: white;
   border-bottom: 2px solid grey;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .navbar-container {
@@ -42,7 +41,7 @@
 .school-name {
   margin: 0;
   font-size: 25px;
-  // font-family: "fantasy", sans-serif;
+  color: black;
 }
 
 @media (width <= 1290px) {

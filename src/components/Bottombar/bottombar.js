@@ -30,7 +30,7 @@ export default function Bottombar() {
                   {""}
                 </a>
                 <div className="location">
-                  Bridgewater-Raritan Highschool<br></br>
+                  Bridgewater-Raritan High School<br></br>
                   600 Garretson Rd, Bridgewater, NJ 08807
                 </div>
               </div>
