@@ -1,76 +1,45 @@
-.boys-section {
-  width: 100%;
-  height: 2500px;
-  background-color: rgb(26, 24, 24);
-  color: white;
-}
-
-.boys-container {
+.boys-first-bar-container {
   height: 100%;
-  width: 90%;
-  margin: 0% 5%;
-}
-
-.boys-flex {
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-}
-.boys-first-bar {
-  height: 30%;
-  width: 100%;
   display: flex;
-}
-.socials-boys {
-  width: 17.5%;
-  display: flex;
-  height: 15%;
+  align-items: center;
   justify-content: space-between;
 }
-
+.socials-boys {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+#boys-first-left {
+  width: 60%;
+}
 .boys-description {
-  width: 100%;
-  height: 50%;
-  padding-top: 5%;
+  width: 35%;
+  height: 100%;
   font-size: 17.5px;
 }
 
 .imageGallery {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
-.boys-rightSide {
-  width: 50%;
-  padding-left: 2.5%;
-}
 .boys-Hudl {
   width: 100%;
-  height: 95%;
 }
 
 .BRVBhudl {
-  width: 100%;
-  height: 80%;
+  width: 55%;
+  height: 10%;
 }
 .icon-boys {
   width: 100%;
-  height: 80%;
-}
-
-.hudl-boys {
-  width: 37.5%;
-  height: 50%;
-}
-.instagram {
-  width: 50%;
+  height: 100%;
 }
 
 .boys-insta {
   width: 50%;
-  height: 50%;
+  height: 10%;
 }
 
 .boys-title {
@@ -91,7 +60,6 @@
 }
 
 .boys-players-tab {
-  width: 100%;
   height: 25%;
   text-align: center;
 }
