@@ -23,6 +23,11 @@ export default function Navbar() {
               </h1>
             </div>
             <div id="right-navbar">
+              <div className="navbar-links">
+                <Link to="/">Home</Link>
+                <Link to="/Boys">Boys</Link>
+                <Link to="/Girls">Girls</Link>
+              </div>
               <a
                 href="https://www.njhighperformancevolleyball.com/"
                 target="_blank"
