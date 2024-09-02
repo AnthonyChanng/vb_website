@@ -11,9 +11,11 @@ import vihaan from "../../assets/images/boysTeam/vihaan.jpg";
 import rom from "../../assets/images/coachRom.jpg";
 import boysNews1 from "../../assets/images/boysNews1.jpg";
 import boysNews2 from "../../assets/images/boysNews2.jpg";
+import React, { useState } from "react";
 import "./boys.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Boys() {
+  const [open, setOpen] = useState(false);
   return (
     <>
       <section>
@@ -35,6 +37,7 @@ export default function Boys() {
               <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
               Coach Corey Romanak: Skyland Conference Coach of the Year
             </div>
+            <h3>Team Socials:</h3>
             <div className="socials-boys">
               <div className="boys-insta">
                 <a

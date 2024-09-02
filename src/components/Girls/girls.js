@@ -38,6 +38,7 @@ export default function Girls() {
               Izzy Antunes: All Skyland Conference Delware Divison Honorable
               Mention <br></br>
             </div>
+            <h3>Team Socials:</h3>
             <div className="socials-girls">
               <div className="girls-insta">
                 <a

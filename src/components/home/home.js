@@ -54,16 +54,50 @@ const Home = () => {
                 <h2 className="game-title">Bridgewater VS Roxbury </h2>
                 <h3 className="date">Septemeber 3rd, 4:00 P.M.</h3>
                 <h3 className="team">
-                  Girls Freshman @ Bridgewater-Raritan HS<br></br> Girls J.V. &
-                  Varsity @ Roxbury HS
+                  <a
+                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      Girls Freshman @ Bridgewater-Raritan HS
+                    </div>
+                  </a>
+                  <br></br>{" "}
+                  <a
+                    href="https://www.google.com/maps/place/Roxbury+High+School/@40.8619227,-74.6407752,15z/data=!4m2!3m1!1s0x0:0xbb12df7825057af0?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      Girls J.V. & Varsity @ Roxbury HS
+                    </div>
+                  </a>
                 </h3>
               </div>
               <div className="schedule-block">
                 <h2 className="game-title">Bridgewater VS Hunterdon Central</h2>
                 <h3 className="date">Septemeber 5th, 4:00 P.M.</h3>
                 <h3 className="team">
-                  Girls Freshman @ Bridgewater-Raritan HS<br></br> Girls J.V. &
-                  Varsity @ Hunterdon Central Regional HS
+                  <a
+                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      Girls Freshman @ Bridgewater-Raritan HS
+                    </div>
+                  </a>
+                  <br></br>{" "}
+                  <a
+                    href="https://www.google.com/maps/place/Hunterdon+Central+Regional+High+School/@40.5171466,-74.8519383,15z/data=!4m6!3m5!1s0x89c3f15f94d1dd7f:0x19c03eb60b9149da!8m2!3d40.5171466!4d-74.8519383!16zL20vMDlicjhy?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      Girls J.V. & Varsity @ Hunterdon Central Regional HS
+                    </div>
+                  </a>
                 </h3>
               </div>
               <div className="schedule-block">
@@ -72,7 +106,15 @@ const Home = () => {
                 </h2>
                 <h3 className="date">Septemeber 11st, 4:00 P.M.</h3>
                 <h3 className="team">
-                  All Girls Games @ Bridgewater-Raritan HS
+                  <a
+                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      All Girls Games @ Bridgewater-Raritan HS
+                    </div>
+                  </a>
                 </h3>
               </div>
             </div>
