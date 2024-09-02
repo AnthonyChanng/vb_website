@@ -97,7 +97,7 @@ export default function Boys() {
             <h1>THE 2025 BOYS BRVB VARSITY TEAM</h1>
           </div>
           <div className="boys-roster">
-            <div className="boys-player">
+            {/* <div className="boys-player">
               <img className="boys-player-img" src={harry} alt="" />
               Harrison Fromberg
             </div>
@@ -120,7 +120,8 @@ export default function Boys() {
             <div className="boys-player">
               <img className="boys-player-img" src={corey} alt="" />
               Corey Amermann
-            </div>
+            </div> */}
+            <Player name="Harrison Fromberg" src={harry} />
           </div>
           <h3>MORE PLAYERS TO BE DETERMINED</h3>
         </div>
@@ -183,5 +184,14 @@ export default function Boys() {
         </div>
       </section>
     </>
+  );
+}
+
+function Player(prop) {
+  return (
+    <div className="boys-player">
+      <img className="boys-player-img" src={prop.src} alt="" />
+      {prop.name}
+    </div>
   );
 }
