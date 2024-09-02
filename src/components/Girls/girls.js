@@ -97,72 +97,72 @@ export default function Girls() {
             <h1>THE 2024 GIRLS BRVB VARSITY TEAM</h1>
           </div>
           <div className="girls-roster">
-            <div className="girls-player">
-              <img className="girls-player-img" src={liel} alt="" />
-              Liel Raines Moshe
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={jada} alt="" />
-              Jada Otero
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={liya} alt="" />
-              Liya Medallion
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Emily Evaristo
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={kylie} alt="" />
-              Kylie Rosander
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={jahniah} alt="" />
-              Jahniah Biship
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={irene} alt="" />
-              Irene Papanastasiou
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Madison Delia
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={hannah} alt="" />
-              Hannah Arun
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Brielle Diaz
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Faye Gallou
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Molly Magner
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Ava Marvuglio
-            </div>
+            <Player
+              description="#1, DS/Libero"
+              name="Liel Raines Moshe"
+              src={liel}
+            />
+            <Player description="#2, Libero/DS" name="Jada Otero" src={jada} />
+            <Player
+              description="#6, Outside Hitter/DS"
+              name="Liya Medallion"
+              src={liya}
+            />
 
-            <div className="girls-player">
-              <img className="girls-player-img" src={ella} alt="" />
-              Ella Sorenson
-            </div>
-            <div className="girls-player">
-              <img className="girls-player-img" src={blank} alt="" />
-              Emily Leppert
-            </div>
+            <Player description="#4, Setter" name="Ella Sorenson" src={ella} />
+            <Player
+              description="#18, DS/Libero"
+              name="Kylie Rosander"
+              src={kylie}
+            />
+            <Player
+              description="#19, Middle Blocker"
+              name="Jahniah Biship"
+              src={jahniah}
+            />
+            <Player
+              description="#21, Setter"
+              name="Irene Papanastasiou"
+              src={irene}
+            />
+            <Player description="#9, DS" name="Hannah Arun" src={hannah} />
+            <Player
+              description="#26, Opposite Hitter"
+              name="Madion Delia"
+              src={blank}
+            />
+            <Player
+              description="#10, Outside Hitter"
+              name="Emily Evaristo"
+              src={blank}
+            />
+
+            <Player
+              description="TBD, Outside Hitter"
+              name="Brielle Diaz"
+              src={blank}
+            />
+            <Player description="TBD, Setter" name="Faye Gallou" src={blank} />
+            <Player
+              description="TBD, Middle Blocker"
+              name="Molly Magner"
+              src={blank}
+            />
+            <Player
+              description="TBD, Outside Hitter"
+              name="Ava Marvuglio"
+              src={blank}
+            />
+            <Player
+              description="#25, Middle Blocker"
+              name="Emily Leppert"
+              src={blank}
+            />
           </div>
 
           <div id="girls-no-img">
             Some images not found because they are new to the team. Please wait
-            for the season to go on for images to be taken of them.
+            for the season to go on for pictures to be taken of them.
           </div>
         </div>
       </section>
@@ -221,5 +221,16 @@ export default function Girls() {
         </div>
       </section>
     </>
+  );
+}
+
+function Player(prop) {
+  return (
+    <div className="girls-player">
+      <img className="girls-player-img" src={prop.src} alt="" />
+      {prop.name}
+      <br></br>
+      {prop.description}
+    </div>
   );
 }

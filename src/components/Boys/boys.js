@@ -97,31 +97,36 @@ export default function Boys() {
             <h1>THE 2025 BOYS BRVB VARSITY TEAM</h1>
           </div>
           <div className="boys-roster">
-            {/* <div className="boys-player">
-              <img className="boys-player-img" src={harry} alt="" />
-              Harrison Fromberg
-            </div>
-            <div className="boys-player">
-              <img className="boys-player-img" src={vihaan} alt="" />
-              Vihaan Pradham
-            </div>
-            <div className="boys-player">
-              <img className="boys-player-img" src={cam} alt="" />
-              Cameron Willaims
-            </div>
-            <div className="boys-player">
-              <img className="boys-player-img" src={andrew} alt="" />
-              Andrew Zagula
-            </div>
-            <div className="boys-player">
-              <img className="boys-player-img" src={aaryan} alt="" />
-              Aaryan Arvind
-            </div>
-            <div className="boys-player">
-              <img className="boys-player-img" src={corey} alt="" />
-              Corey Amermann
-            </div> */}
-            <Player name="Harrison Fromberg" src={harry} />
+            <Player
+              description="#18, Outside Hitter"
+              name="Harrison Fromberg"
+              src={harry}
+            />
+            <Player
+              description="#5, Outsider Hitter"
+              name="Vihaan Pradham"
+              src={vihaan}
+            />
+            <Player
+              description="#3, Libero/Setter"
+              name="Andrew Zagula"
+              src={andrew}
+            />
+            <Player
+              description="#3, Opposite Hitter"
+              name="Cameron Williams"
+              src={cam}
+            />
+            <Player
+              description="#11, Outside Hitter"
+              name="Aaryan Arvind"
+              src={aaryan}
+            />
+            <Player
+              description="#30, Opposite Hitter"
+              name="Corey Amermann"
+              src={corey}
+            />
           </div>
           <h3>MORE PLAYERS TO BE DETERMINED</h3>
         </div>
@@ -192,6 +197,8 @@ function Player(prop) {
     <div className="boys-player">
       <img className="boys-player-img" src={prop.src} alt="" />
       {prop.name}
+      <br></br>
+      {prop.description}
     </div>
   );
 }

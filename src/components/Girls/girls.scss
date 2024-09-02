@@ -73,15 +73,14 @@
   flex-direction: column;
   width: 15%;
   text-align: center;
+  margin: 10px;
 }
 .girls-player-img {
   height: 80%;
 }
 .girls-roster {
-  height: 32.5%;
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 #girls-no-img {
