@@ -20,53 +20,13 @@ export default function Boys() {
     <>
       <section>
         <div className="container boys-first-bar-container">
-          <div id="boys-first-left">
-            <div className="imageGallery">
-              <Carousel images={boysData} />
-            </div>
-            <div className="boys-awards">
-              <h1>TEAM AWARDS:</h1>
-              Harrison Fromberg: Skyland Conference Boys Volleyball Player of
-              the Year, Skyland Conference First Team, All-State Third Team, and
-              All-Group 4 First Team <br></br>Sean Marvuglio: All-Group 4 Second
-              Team and Skyland Conference First Team <br></br>Matthew Dolly:
-              Skyland Conference First Team <br></br>Trevor Sullivan: Skyland
-              Conference First Team <br></br>Vihaan Pradham: Skyland Conference
-              Second Team <br></br>Cameron Willaims: Skyland Conference Second
-              Team
-              <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
-              Coach Corey Romanak: Skyland Conference Coach of the Year
-            </div>
-            <h3>Team Socials:</h3>
-            <div className="socials-boys">
-              <div className="boys-insta">
-                <a
-                  className="instagram"
-                  href="https://www.instagram.com/brboysvolleyball/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    color="white"
-                    className="icon-boys"
-                  />
-                </a>
-                <div className="boys-title">Boys Instagram</div>
-              </div>
-              <div className="BRVBhudl">
-                <a
-                  href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
-                </a>
-                <div className="boys-title">Boys Hudl</div>
-              </div>
-            </div>
+          <div className="imageGallery">
+            <Carousel images={boysData} />
           </div>
+        </div>
+      </section>
+      <section id="section boys-first-bar-section">
+        <div className="container boys-first-bar-container">
           <div className="boys-description">
             The BRHS Boys Volleyball Team are back-to-back county champs as well
             as back-to-back North Group 4 champs. They have dominated these two
@@ -91,6 +51,48 @@ export default function Boys() {
             volleyball and strive to be a part of a winning culture, join the
             team! Tryouts are in late March and be sure to join the Google
             Classroom for more information.
+          </div>
+          <div className="boys-awards">
+            <h1>TEAM AWARDS:</h1>
+            Harrison Fromberg: Skyland Conference Boys Volleyball Player of the
+            Year, Skyland Conference First Team, All-State Third Team, and
+            All-Group 4 First Team <br></br>Sean Marvuglio: All-Group 4 Second
+            Team and Skyland Conference First Team <br></br>Matthew Dolly:
+            Skyland Conference First Team <br></br>Trevor Sullivan: Skyland
+            Conference First Team <br></br>Vihaan Pradham: Skyland Conference
+            Second Team <br></br>Cameron Willaims: Skyland Conference Second
+            Team
+            <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
+            Coach Corey Romanak: Skyland Conference Coach of the Year
+          </div>
+          <h3>Team Socials:</h3>
+          <div className="socials-boys">
+            <div className="boys-insta">
+              <a
+                className="instagram"
+                href="https://www.instagram.com/brboysvolleyball/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  color="white"
+                  className="icon-boys"
+                />
+              </a>
+              <div className="boys-title">Boys Instagram</div>
+            </div>
+            <div className="BRVBhudl">
+              <a
+                href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {" "}
+                <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
+              </a>
+              <div className="boys-title">Boys Hudl</div>
+            </div>
           </div>
         </div>
       </section>
@@ -141,7 +143,20 @@ export default function Boys() {
               <h1>HEAD COACH COREY ROMANAK</h1>
             </div>
             <img src={rom} alt="romanak" className="romanak" />
-            <div className="coach-description">
+            <div
+              className="button"
+              onClick={() => {
+                setOpen(!open);
+              }}
+            >
+              <Open />
+            </div>
+
+            <div
+              className={
+                open ? "open-coach-description" : "closed-coach-description"
+              }
+            >
               Coach Corey Romanak has been the head coach of the
               Bridgewater-Raritan High School Boys Varsity Volleyball program
               for over 25 years and was also the head coach of the girls program
@@ -203,5 +218,32 @@ function Player(prop) {
       <br></br>
       {prop.description}
     </div>
+  );
+}
+
+function Open() {
+  return (
+    <svg
+      width="40px"
+      height="40px"
+      fill="#000000"
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      enable-background="new 0 0 20 20"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path d="M19,20H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h18c0.6,0,1,0.4,1,1v18C20,19.6,19.6,20,19,20z M2,18h16V2H2V18z"></path>{" "}
+        <polygon points="14,9 11,9 11,6 9,6 9,9 6,9 6,11 9,11 9,14 11,14 11,11 14,11 "></polygon>{" "}
+      </g>
+    </svg>
   );
 }

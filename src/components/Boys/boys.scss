@@ -1,19 +1,18 @@
 .boys-first-bar-container {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .socials-boys {
   width: 20%;
   display: flex;
   justify-content: space-between;
 }
-#boys-first-left {
-  width: 60%;
-}
+
 .boys-description {
-  width: 35%;
+  border-top: 4px solid grey;
+  padding-top: 10px;
+  width: 100%;
   height: 100%;
   font-size: 17.5px;
 }
@@ -95,6 +94,7 @@
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 8px;
 }
 .coach-title {
   border-bottom: 4px solid grey;
@@ -121,4 +121,22 @@
 }
 .news-title {
   border-bottom: 4px solid grey;
+}
+.open-coach-description {
+  transition: all 0.5s ease-in-out;
+}
+
+.closed-coach-description {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.button {
+  position: absolute;
+  translate: 10px -70px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
