@@ -124,3 +124,20 @@
 .news-title {
   border-bottom: 4px solid grey;
 }
+#open-josh1 {
+  transition: all 1s ease-in-out;
+}
+
+#closed-josh1 {
+  opacity: 0;
+  height: 0;
+}
+
+#open-josh2 {
+  opacity: 0;
+  height: 0;
+}
+
+#closed-josh2 {
+  transition: all 1s ease-in-out;
+}

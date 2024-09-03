@@ -9,6 +9,7 @@ import corey from "../../assets/images/boysTeam/corey.jpg";
 import andrew from "../../assets/images/boysTeam/andrew.jpg";
 import vihaan from "../../assets/images/boysTeam/vihaan.jpg";
 import rom from "../../assets/images/coachRom.jpg";
+import rom2 from "../../assets/images/rom2.jpg";
 import boysNews1 from "../../assets/images/boysNews1.jpg";
 import boysNews2 from "../../assets/images/boysNews2.jpg";
 import React, { useState } from "react";
@@ -142,16 +143,21 @@ export default function Boys() {
             <div className="coach-title">
               <h1>HEAD COACH COREY ROMANAK</h1>
             </div>
-            <img src={rom} alt="romanak" className="romanak" />
+
             <div
-              className="button"
+              className={open ? "open-button" : "closed-button"}
               onClick={() => {
                 setOpen(!open);
               }}
             >
               <Open />
             </div>
-
+            <div id={open ? "open-rom1" : "closed-rom1"}>
+              <img src={rom} alt="romanak" className="romanak" />
+            </div>
+            <div id={open ? "open-rom2" : "closed-rom2"}>
+              <img src={rom2} alt="romanak" className="romanak" />
+            </div>
             <div
               className={
                 open ? "open-coach-description" : "closed-coach-description"

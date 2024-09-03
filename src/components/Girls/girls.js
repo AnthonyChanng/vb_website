@@ -14,6 +14,7 @@ import blank from "../../assets/images/girlsTeam/blankGirls.png";
 import josh from "../../assets/images/coachJosh.jpg";
 import girlsNews1 from "../../assets/images/girlsNews1.png";
 import girlsNews2 from "../../assets/images/girlsNews2.jpg";
+import josh2 from "../../assets/images/josh2.jpg";
 import React, { useState } from "react";
 import "./girls.scss";
 import { Carousel } from "../Carousel/carousel";
@@ -172,14 +173,19 @@ export default function Girls() {
             <div className="coach-title">
               <h1>HEAD COACH JOSH EVERETT</h1>
             </div>
-            <img src={josh} alt="josh" className="josh" />
             <div
-              className="button"
+              className={open ? "open-button" : "closed-button"}
               onClick={() => {
                 setOpen(!open);
               }}
             >
               <Open />
+            </div>
+            <div id={open ? "open-josh1" : "closed-josh1"}>
+              <img src={josh} alt="josh" className="josh" />
+            </div>
+            <div id={open ? "open-josh2" : "closed-josh2"}>
+              <img src={josh2} alt="josh" className="josh" />
             </div>
             <div
               className={

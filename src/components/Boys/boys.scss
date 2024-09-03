@@ -123,20 +123,42 @@
   border-bottom: 4px solid grey;
 }
 .open-coach-description {
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .closed-coach-description {
-  visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  height: 0;
 }
 
-.button {
+.open-button {
   position: absolute;
-  translate: 10px -70px;
+  translate: 10px 370px;
 }
 
-.button:hover {
+.open-button:hover,
+.closed-button:hover {
   cursor: pointer;
+}
+
+.closed-button {
+  position: absolute;
+  translate: 10px 950px;
+}
+#open-rom1 {
+  transition: all 1s ease-in-out;
+}
+
+#closed-rom1 {
+  opacity: 0;
+  height: 0;
+}
+
+#open-rom2 {
+  opacity: 0;
+  height: 0;
+}
+
+#closed-rom2 {
+  transition: all 1s ease-in-out;
 }
