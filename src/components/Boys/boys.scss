@@ -162,3 +162,22 @@
 #closed-rom2 {
   transition: all 1s ease-in-out;
 }
+
+#open-second-boys {
+  transition: all 1s ease-in-out;
+}
+
+#closed-second-boys {
+  opacity: 0;
+  height: 0;
+}
+
+#boys-description-open {
+  opacity: 0;
+  height: 0;
+}
+
+#boys-description-closed {
+  transition: all 1s ease-in-out;
+  margin-top: 10px;
+}

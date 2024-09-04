@@ -17,6 +17,7 @@ import "./boys.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Boys() {
   const [open, setOpen] = useState(false);
+  const [openDescription, setOpenDescription] = useState(false);
   return (
     <>
       <section>
@@ -37,62 +38,90 @@ export default function Boys() {
             the spotlight. Although there were a few keys pieces who graduated
             last year, a large part of this championship core has remained put.{" "}
             <br></br>
-            <br></br>The determination and strength across the team is not to be
-            underestimated. After losing the first set in the county finals
-            versus Ridge, and being down early in the last two sets, it looked
-            all but over for the Panthers. However, the passion from every
-            single player on the court shined through. Play after play, the
-            practice and knowledge that was drilled into them by their coach,
-            Corey Romanak, led them to make the right decisions and the eventual
-            victory. <br></br>
-            <br></br>One of the most important parts of the team is the great
-            team chemistry that they have. From the countless pasta parties and
-            bus rides to games and tournaments, there is an amazing bond that is
-            hard to replicate anywhere else. If you have the passion for
-            volleyball and strive to be a part of a winning culture, join the
-            team! Tryouts are in late March and be sure to join the Google
-            Classroom for more information.
-          </div>
-          <div className="boys-awards">
-            <h1>TEAM AWARDS:</h1>
-            Harrison Fromberg: Skyland Conference Boys Volleyball Player of the
-            Year, Skyland Conference First Team, All-State Third Team, and
-            All-Group 4 First Team <br></br>Sean Marvuglio: All-Group 4 Second
-            Team and Skyland Conference First Team <br></br>Matthew Dolly:
-            Skyland Conference First Team <br></br>Trevor Sullivan: Skyland
-            Conference First Team <br></br>Vihaan Pradham: Skyland Conference
-            Second Team <br></br>Cameron Willaims: Skyland Conference Second
-            Team
-            <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
-            Coach Corey Romanak: Skyland Conference Coach of the Year
-          </div>
-          <h3>Team Socials:</h3>
-          <div className="socials-boys">
-            <div className="boys-insta">
-              <a
-                className="instagram"
-                href="https://www.instagram.com/brboysvolleyball/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  color="white"
-                  className="icon-boys"
-                />
-              </a>
-              <div className="boys-title">Boys Instagram</div>
+            <div
+              id={
+                openDescription
+                  ? "boys-description-open"
+                  : "boys-description-closed"
+              }
+              onClick={() => {
+                setOpenDescription(!openDescription);
+              }}
+            >
+              <PlusOpenDescription />
             </div>
-            <div className="BRVBhudl">
-              <a
-                href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
-              </a>
-              <div className="boys-title">Boys Hudl</div>
+            <div
+              id={openDescription ? "open-second-boys" : "closed-second-boys"}
+            >
+              <br></br>The determination and strength across the team is not to
+              be underestimated. After losing the first set in the county finals
+              versus Ridge, and being down early in the last two sets, it looked
+              all but over for the Panthers. However, the passion from every
+              single player on the court shined through. Play after play, the
+              practice and knowledge that was drilled into them by their coach,
+              Corey Romanak, led them to make the right decisions and the
+              eventual victory. <br></br>
+              <br></br>One of the most important parts of the team is the great
+              team chemistry that they have. From the countless pasta parties
+              and bus rides to games and tournaments, there is an amazing bond
+              that is hard to replicate anywhere else. If you have the passion
+              for volleyball and strive to be a part of a winning culture, join
+              the team! Tryouts are in late March and be sure to join the Google
+              Classroom for more information.
+              <div className="boys-awards">
+                <h1>TEAM AWARDS:</h1>
+                Harrison Fromberg: Skyland Conference Boys Volleyball Player of
+                the Year, Skyland Conference First Team, All-State Third Team,
+                and All-Group 4 First Team <br></br>Sean Marvuglio: All-Group 4
+                Second Team and Skyland Conference First Team <br></br>Matthew
+                Dolly: Skyland Conference First Team <br></br>Trevor Sullivan:
+                Skyland Conference First Team <br></br>Vihaan Pradham: Skyland
+                Conference Second Team <br></br>Cameron Willaims: Skyland
+                Conference Second Team
+                <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
+                Coach Corey Romanak: Skyland Conference Coach of the Year
+              </div>
+              <h3>Team Socials:</h3>
+              <div className="socials-boys">
+                <div className="boys-insta">
+                  <a
+                    className="instagram"
+                    href="https://www.instagram.com/brboysvolleyball/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      color="white"
+                      className="icon-boys"
+                    />
+                  </a>
+                  <div className="boys-title">Boys Instagram</div>
+                </div>
+                <div className="BRVBhudl">
+                  <a
+                    href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
+                  </a>
+                  <div className="boys-title">Boys Hudl</div>
+                </div>
+              </div>
+            </div>
+            <div
+              id={
+                openDescription
+                  ? "boys-description-closed"
+                  : "boys-description-open"
+              }
+              onClick={() => {
+                setOpenDescription(!openDescription);
+              }}
+            >
+              <MinusOpenDescription />
             </div>
           </div>
         </div>
@@ -249,6 +278,66 @@ function Open() {
         {" "}
         <path d="M19,20H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h18c0.6,0,1,0.4,1,1v18C20,19.6,19.6,20,19,20z M2,18h16V2H2V18z"></path>{" "}
         <polygon points="14,9 11,9 11,6 9,6 9,9 6,9 6,11 9,11 9,14 11,14 11,11 14,11 "></polygon>{" "}
+      </g>
+    </svg>
+  );
+}
+
+function PlusOpenDescription() {
+  return (
+    <svg
+      width="40px"
+      height="40px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M4 12H20M12 4V20"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+}
+
+function MinusOpenDescription() {
+  return (
+    <svg
+      width="40px"
+      height="40px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M6 12L18 12"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
       </g>
     </svg>
   );

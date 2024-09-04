@@ -20,6 +20,7 @@ import "./girls.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Girls() {
   const [open, setOpen] = useState(false);
+  const [openDescription, setOpenDescription] = useState(false);
   return (
     <>
       <section>
@@ -39,60 +40,90 @@ export default function Girls() {
             semi-finals of the Somerset County Tournament before losing to
             Watchung Hills. Many players were recognized by the coaches across
             the conference and were given awards based on their stellar play.
-            <br></br> <br></br>The team has a great relationship on and off the
-            court, which speaks volumes to the environment built by the coaches
-            and past players. A team bond is important to any sport and the one
-            in BRHS Girls Volleyball Program is few and far between. There's a
-            dynamic within the program that is a joy to be a part of and
-            everyone genuinely enjoys their time there. <br></br> <br></br>With
-            Coach Josh Everett at the helm, the team is an amazing thing to be a
-            part of. Winning isn't everything, even though we do win a lot, the
-            way we see it, every day is an opportunity to get better. Be it a
-            win or a loss, a practice or a game, we take every day seriously and
-            strive to grow as a team and people. We encourage all girls to
-            tryout, regardless of their skill in volleyball! Tryouts are in
-            August and be sure to join the Google Classroom for extra details.{" "}
-          </div>
-          <div className="girls-awards">
-            <h1>TEAM AWARDS:</h1>
-            Madison Patton: All Skyland Conference Delware Divison First Team{" "}
             <br></br>
-            Isabel Rivera: All Skyland Conference Delware Divison First Team{" "}
-            <br></br>
-            Irene Papanastasiou: All Skyland Conference Delware Divison Second
-            Team <br></br>
-            Vasi Papanastasiou: All Skyland Conference Delware Divison Second
-            Team <br></br>
-            Izzy Antunes: All Skyland Conference Delware Divison Honorable
-            Mention <br></br>
-          </div>
-          <h3>Team Socials:</h3>
-          <div className="socials-girls">
-            <div className="girls-insta">
-              <a
-                className="instagram"
-                href="https://www.instagram.com/brhsgirlsvb/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  color="white"
-                  className="icon-girls"
-                />
-              </a>
-              <div className="girls-title">Girls Instagram</div>
+            <div
+              id={
+                openDescription
+                  ? "girls-description-open"
+                  : "girls-description-closed"
+              }
+              onClick={() => {
+                setOpenDescription(!openDescription);
+              }}
+            >
+              <PlusOpenDescription />
             </div>
-            <div className="BRVBhudl">
-              <a
-                href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {" "}
-                <img className="girls-Hudl" src={hudl} alt="hudl" /> {""}
-              </a>
-              <div className="girls-title">Girls Hudl</div>
+            <div
+              id={openDescription ? "open-second-girls" : "closed-second-boys"}
+            >
+              <br></br>The team has a great relationship on and off the court,
+              which speaks volumes to the environment built by the coaches and
+              past players. A team bond is important to any sport and the one in
+              BRHS Girls Volleyball Program is few and far between. There's a
+              dynamic within the program that is a joy to be a part of and
+              everyone genuinely enjoys their time there. <br></br> <br></br>
+              With Coach Josh Everett at the helm, the team is an amazing thing
+              to be a part of. Winning isn't everything, even though we do win a
+              lot, the way we see it, every day is an opportunity to get better.
+              Be it a win or a loss, a practice or a game, we take every day
+              seriously and strive to grow as a team and people. We encourage
+              all girls to tryout, regardless of their skill in volleyball!
+              Tryouts are in August and be sure to join the Google Classroom for
+              extra details.{" "}
+              <div className="girls-awards">
+                <h1>TEAM AWARDS:</h1>
+                Madison Patton: All Skyland Conference Delware Divison First
+                Team <br></br>
+                Isabel Rivera: All Skyland Conference Delware Divison First Team{" "}
+                <br></br>
+                Irene Papanastasiou: All Skyland Conference Delware Divison
+                Second Team <br></br>
+                Vasi Papanastasiou: All Skyland Conference Delware Divison
+                Second Team <br></br>
+                Izzy Antunes: All Skyland Conference Delware Divison Honorable
+                Mention <br></br>
+              </div>
+              <h3>Team Socials:</h3>
+              <div className="socials-girls">
+                <div className="girls-insta">
+                  <a
+                    className="instagram"
+                    href="https://www.instagram.com/brhsgirlsvb/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      color="white"
+                      className="icon-girls"
+                    />
+                  </a>
+                  <div className="girls-title">Girls Instagram</div>
+                </div>
+                <div className="BRVBhudl">
+                  <a
+                    href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <img className="girls-Hudl" src={hudl} alt="hudl" /> {""}
+                  </a>
+                  <div className="girls-title">Girls Hudl</div>
+                </div>
+              </div>
+            </div>
+            <div
+              id={
+                openDescription
+                  ? "girls-description-closed"
+                  : "girls-description-open"
+              }
+              onClick={() => {
+                setOpenDescription(!openDescription);
+              }}
+            >
+              <MinusOpenDescription />
             </div>
           </div>
         </div>
@@ -275,6 +306,65 @@ function Open() {
         {" "}
         <path d="M19,20H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h18c0.6,0,1,0.4,1,1v18C20,19.6,19.6,20,19,20z M2,18h16V2H2V18z"></path>{" "}
         <polygon points="14,9 11,9 11,6 9,6 9,9 6,9 6,11 9,11 9,14 11,14 11,11 14,11 "></polygon>{" "}
+      </g>
+    </svg>
+  );
+}
+function PlusOpenDescription() {
+  return (
+    <svg
+      width="40px"
+      height="40px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M4 12H20M12 4V20"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+}
+
+function MinusOpenDescription() {
+  return (
+    <svg
+      width="40px"
+      height="40px"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="#ffffff"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M6 12L18 12"
+          stroke="#ffffff"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>{" "}
       </g>
     </svg>
   );

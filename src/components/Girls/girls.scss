@@ -141,3 +141,22 @@
 #closed-josh2 {
   transition: all 1s ease-in-out;
 }
+
+#girls-description-open {
+  opacity: 0;
+  height: 0;
+}
+
+#girls-description-closed {
+  transition: all 1s ease-in-out;
+  margin-top: 10px;
+}
+
+#open-second-girls {
+  transition: all 1s ease-in-out;
+}
+
+#closed-second-girls {
+  opacity: 0;
+  height: 0;
+}
