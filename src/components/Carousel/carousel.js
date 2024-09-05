@@ -1,18 +1,19 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { useRef } from "react";
 import "./carousel.scss";
 
 export function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  let timeOut = null;
+  const timeOutRef = useRef(null);
 
   useEffect(() => {
-    timeOut =
+    timeOut = timeOutRef.current =
       autoPlay &&
       setTimeout(() => {
         slideRight();
-      }, 10000);
+      }, 1000);
   });
 
   const slideRight = () => {
