@@ -29,7 +29,7 @@ export function Carousel({ images }) {
       className="carousel"
       onMouseEnter={() => {
         setAutoPlay(false);
-        clearTimeout(timeOut);
+        clearTimeout(timeOutRef);
       }}
       onMouseLeave={() => {
         setAutoPlay(true);
