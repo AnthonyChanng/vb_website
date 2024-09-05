@@ -6,11 +6,11 @@ import "./carousel.scss";
 export function Carousel({ images }) {
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
-  const timeOutRef = useRef(null);
+  let timeOutRef = useRef(null);
 
   useEffect(() => {
-    timeOutRef = timeOutRef.current;
-    autoPlay &&
+    timeOutRef.current =
+      autoPlay &&
       setTimeout(() => {
         slideRight();
       }, 1000);
