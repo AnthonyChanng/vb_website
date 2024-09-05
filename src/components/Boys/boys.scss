@@ -78,6 +78,10 @@
   height: 65%;
   border-radius: 8px;
 }
+.boys-player-img:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
 .boys-player-text {
   height: 10%;
 }

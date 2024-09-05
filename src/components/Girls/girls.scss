@@ -75,7 +75,11 @@
   height: 270px;
   border-radius: 8px;
 }
-.boys-player-text {
+.girls-player-img:hover {
+  transform: scale(1.02);
+  transition: 1s;
+}
+.girls-player-text {
   height: 10%;
 }
 .girls-roster {
