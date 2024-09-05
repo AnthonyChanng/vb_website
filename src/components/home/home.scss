@@ -98,3 +98,43 @@
 .merch-logo:hover {
   transform: scale(1.01);
 }
+
+@media (width <= 1300px) {
+  .home-container {
+    width: 90%;
+  }
+  .hero-text h1 {
+    font-size: 150%;
+  }
+  .hero-text h2 {
+    font-size: 100%;
+  }
+  .hero-text {
+    position: absolute;
+    z-index: 1;
+    translate: 30px -100%;
+  }
+  .description-container {
+    width: 90%;
+  }
+  .schedule-container {
+    width: 90%;
+  }
+  .third-bar-container {
+    width: 90%;
+  }
+  .third-bar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width <= 750px) {
+  .games {
+    flex-direction: column;
+  }
+  .schedule-block {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

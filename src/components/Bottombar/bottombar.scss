@@ -1,7 +1,7 @@
 .bottombar-section {
   background-color: white;
   border-top: 4px solid grey;
-  height: 150px;
+  color: black;
 }
 .bottombar-container {
   margin: 0 20px;
@@ -85,33 +85,35 @@
   width: 95%;
   justify-content: space-between;
 }
-@media (width <= 1600px) {
+
+@media (width <= 1350px) {
+  .location {
+    display: none;
+  }
+  .right-bottom {
+    width: 50%;
+  }
+}
+
+@media (width <= 1000px) {
   .imgOrigin {
     display: flex;
     flex-direction: column;
   }
-}
-@media (width <= 1150px) {
-  .right-bottom {
-    width: 80%;
-  }
-  .left-bottom {
-    width: 80%;
-  }
-  #imgs {
-    display: none;
-  }
-  .top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .links {
+    width: 50%;
   }
 }
 
-@media (width <= 600px) {
-  .left-bottom {
-    display: flex;
+@media (width <= 700px) {
+  .top {
     flex-direction: column;
-    padding-bottom: 5%;
+    align-items: center;
+  }
+  .right-bottom {
+    width: 100%;
+  }
+  .left-bottom {
+    width: 100%;
   }
 }

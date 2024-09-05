@@ -112,7 +112,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="container">
+        <div className="container third-bar-container">
           <div className="third-bar">
             <div className="left-side-third">
               <div className="current-standings">

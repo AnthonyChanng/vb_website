@@ -68,47 +68,43 @@ export default function Boys() {
               for volleyball and strive to be a part of a winning culture, join
               the team! Tryouts are in late March and be sure to join the Google
               Classroom for more information.
-              <div className="boys-awards">
-                <h1>TEAM AWARDS:</h1>
-                Harrison Fromberg: Skyland Conference Boys Volleyball Player of
-                the Year, Skyland Conference First Team, All-State Third Team,
-                and All-Group 4 First Team <br></br>Sean Marvuglio: All-Group 4
-                Second Team and Skyland Conference First Team <br></br>Matthew
-                Dolly: Skyland Conference First Team <br></br>Trevor Sullivan:
-                Skyland Conference First Team <br></br>Vihaan Pradham: Skyland
-                Conference Second Team <br></br>Cameron Willaims: Skyland
-                Conference Second Team
-                <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
-                Coach Corey Romanak: Skyland Conference Coach of the Year
-              </div>
+              <h1>TEAM AWARDS:</h1>
+              Harrison Fromberg: Skyland Conference Boys Volleyball Player of
+              the Year, Skyland Conference First Team, All-State Third Team, and
+              All-Group 4 First Team <br></br>Sean Marvuglio: All-Group 4 Second
+              Team and Skyland Conference First Team <br></br>Matthew Dolly:
+              Skyland Conference First Team <br></br>Trevor Sullivan: Skyland
+              Conference First Team <br></br>Vihaan Pradham: Skyland Conference
+              Second Team <br></br>Cameron Willaims: Skyland Conference Second
+              Team
+              <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
+              Coach Corey Romanak: Skyland Conference Coach of the Year
               <h3>Team Socials:</h3>
-              <div className="socials-boys">
-                <div className="boys-insta">
-                  <a
-                    className="instagram"
-                    href="https://www.instagram.com/brboysvolleyball/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      color="white"
-                      className="icon-boys"
-                    />
-                  </a>
-                  <div className="boys-title">Boys Instagram</div>
-                </div>
-                <div className="BRVBhudl">
-                  <a
-                    href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {" "}
-                    <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
-                  </a>
-                  <div className="boys-title">Boys Hudl</div>
-                </div>
+              <div className="boys-insta">
+                <a
+                  className="instagram"
+                  href="https://www.instagram.com/brboysvolleyball/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    color="white"
+                    className="icon-boys"
+                  />
+                </a>
+                <div className="boys-title">Boys Instagram</div>
+              </div>
+              <div className="BRVBhudl">
+                <a
+                  href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
+                </a>
+                <div className="boys-title">Boys Hudl</div>
               </div>
             </div>
             <div
@@ -135,31 +131,37 @@ export default function Boys() {
             <Player
               description="#18, Outside Hitter"
               name="Harrison Fromberg"
+              insta="https://www.instagram.com/harryfromberg/"
               src={harry}
             />
             <Player
               description="#5, Outsider Hitter"
               name="Vihaan Pradham"
+              insta="https://www.instagram.com/not.vihaan/"
               src={vihaan}
             />
             <Player
               description="#3, Libero/Setter"
               name="Andrew Zagula"
+              insta="https://www.instagram.com/andrewzagulaa/"
               src={andrew}
             />
             <Player
               description="#3, Opposite Hitter"
               name="Cameron Williams"
+              insta="https://www.instagram.com/asecending/"
               src={cam}
             />
             <Player
               description="#11, Outside Hitter"
               name="Aaryan Arvind"
+              insta="https://www.instagram.com/aarvind296/"
               src={aaryan}
             />
             <Player
               description="#30, Opposite Hitter"
               name="Corey Amermann"
+              insta="https://www.instagram.com/corey.amerman/"
               src={corey}
             />
           </div>
@@ -182,10 +184,18 @@ export default function Boys() {
               <Open />
             </div>
             <div id={open ? "open-rom1" : "closed-rom1"}>
-              <img src={rom} alt="romanak" className="romanak" />
+              <img
+                src={rom}
+                alt="romanak"
+                id={open ? "open-romanak1" : "closed-romanak1"}
+              />
             </div>
             <div id={open ? "open-rom2" : "closed-rom2"}>
-              <img src={rom2} alt="romanak" className="romanak" />
+              <img
+                src={rom2}
+                alt="romanak"
+                id={open ? "open-romanak2" : "closed-romanak2"}
+              />
             </div>
             <div
               className={
@@ -246,12 +256,35 @@ export default function Boys() {
 }
 
 function Player(prop) {
+  const [openSocial, setOpenSocials] = useState(false);
   return (
-    <div className="boys-player">
+    <div className="boys-player" onClick={() => setOpenSocials(!openSocial)}>
       <img className="boys-player-img" src={prop.src} alt="" />
-      {prop.name}
-      <br></br>
-      {prop.description}
+      <div className="boys-player-text">
+        {prop.name}
+        <br></br>
+        {prop.description}
+      </div>
+      <div
+        className={
+          openSocial
+            ? "open-boys-player-socials"
+            : "closed-boys-players-socials"
+        }
+      >
+        <a
+          className="instagram"
+          href={prop.insta}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faInstagram}
+            color="white"
+            className="icon-boys"
+          />
+        </a>
+      </div>
     </div>
   );
 }
@@ -286,12 +319,12 @@ function Open() {
 function PlusOpenDescription() {
   return (
     <svg
-      width="40px"
       height="40px"
+      width="40px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
+      transform="rotate(180)"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -302,11 +335,10 @@ function PlusOpenDescription() {
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
-          d="M4 12H20M12 4V20"
-          stroke="#ffffff"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071C19.3166 12.0976 18.6834 12.0976 18.2929 11.7071L13 6.41421V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V6.41421L5.70711 11.7071C5.31658 12.0976 4.68342 12.0976 4.29289 11.7071C3.90237 11.3166 3.90237 10.6834 4.29289 10.2929L11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3Z"
+          fill="#ffffff"
         ></path>{" "}
       </g>
     </svg>
@@ -316,12 +348,12 @@ function PlusOpenDescription() {
 function MinusOpenDescription() {
   return (
     <svg
-      width="40px"
       height="40px"
+      width="40px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
+      transform="rotate(0)"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -332,11 +364,10 @@ function MinusOpenDescription() {
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
-          d="M6 12L18 12"
-          stroke="#ffffff"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071C19.3166 12.0976 18.6834 12.0976 18.2929 11.7071L13 6.41421V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V6.41421L5.70711 11.7071C5.31658 12.0976 4.68342 12.0976 4.29289 11.7071C3.90237 11.3166 3.90237 10.6834 4.29289 10.2929L11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3Z"
+          fill="#ffffff"
         ></path>{" "}
       </g>
     </svg>

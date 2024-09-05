@@ -10,7 +10,7 @@ import kylie from "../../assets/images/girlsTeam/kylie.jpg";
 import ella from "../../assets/images/girlsTeam/ella.jpg";
 import hannah from "../../assets/images/girlsTeam/hannah.jpg";
 import irene from "../../assets/images/girlsTeam/irene.jpg";
-import blank from "../../assets/images/girlsTeam/blankGirls.png";
+import blank from "../../assets/images/girlsTeam/blank.png";
 import josh from "../../assets/images/coachJosh.jpg";
 import girlsNews1 from "../../assets/images/girlsNews1.png";
 import girlsNews2 from "../../assets/images/girlsNews2.jpg";
@@ -137,12 +137,14 @@ export default function Girls() {
             <Player
               description="#1, DS/Libero"
               name="Liel Raines Moshe"
+              insta="https://www.instagram.com/liel.raines/"
               src={liel}
             />
             <Player description="#2, Libero/DS" name="Jada Otero" src={jada} />
             <Player
               description="#6, Outside Hitter/DS"
               name="Liya Medallion"
+              insta="https://www.instagram.com/liyamedallon/"
               src={liya}
             />
 
@@ -150,49 +152,58 @@ export default function Girls() {
             <Player
               description="#18, DS/Libero"
               name="Kylie Rosander"
+              insta="https://www.instagram.com/ky.rosander/"
               src={kylie}
             />
             <Player
               description="#19, Middle Blocker"
               name="Jahniah Biship"
+              insta="https://www.instagram.com/niah.bis/"
               src={jahniah}
             />
             <Player
               description="#21, Setter"
               name="Irene Papanastasiou"
+              insta="https://www.instagram.com/irenepapn/"
               src={irene}
             />
             <Player description="#9, DS" name="Hannah Arun" src={hannah} />
             <Player
               description="#26, Opposite Hitter"
               name="Madion Delia"
+              insta="https://www.instagram.com/madii__deliaa/"
               src={blank}
             />
             <Player
               description="#10, Outside Hitter"
               name="Emily Evaristo"
+              insta="https://www.instagram.com/emilyvevaristo/"
               src={blank}
             />
 
             <Player
               description="TBD, Outside Hitter"
               name="Brielle Diaz"
+              insta="https://www.instagram.com/brielle_diaz15/"
               src={blank}
             />
             <Player description="TBD, Setter" name="Faye Gallou" src={blank} />
             <Player
               description="TBD, Middle Blocker"
               name="Molly Magner"
+              insta="https://www.instagram.com/mollym2288/"
               src={blank}
             />
             <Player
               description="TBD, Outside Hitter"
               name="Ava Marvuglio"
+              insta="https://www.instagram.com/ava.marvuglio/"
               src={blank}
             />
             <Player
               description="#25, Middle Blocker"
               name="Emily Leppert"
+              insta="https://www.instagram.com/emily_leppert7/"
               src={blank}
             />
           </div>
@@ -212,11 +223,19 @@ export default function Girls() {
             >
               <Open />
             </div>
-            <div id={open ? "open-josh1" : "closed-josh1"}>
-              <img src={josh} alt="josh" className="josh" />
+            <div id={open ? "open-josh1-div" : "closed-josh1-div"}>
+              <img
+                src={josh}
+                alt="josh"
+                id={open ? "open-josh1" : "closed-josh1"}
+              />
             </div>
-            <div id={open ? "open-josh2" : "closed-josh2"}>
-              <img src={josh2} alt="josh" className="josh" />
+            <div id={open ? "open-josh2-div" : "closed-josh2-div"}>
+              <img
+                src={josh2}
+                alt="josh"
+                id={open ? "open-josh2" : "closed-josh2"}
+              />
             </div>
             <div
               className={
@@ -274,12 +293,35 @@ export default function Girls() {
 }
 
 function Player(prop) {
+  const [openSocial, setOpenSocials] = useState(false);
   return (
-    <div className="girls-player">
+    <div className="girls-player" onClick={() => setOpenSocials(!openSocial)}>
       <img className="girls-player-img" src={prop.src} alt="" />
-      {prop.name}
-      <br></br>
-      {prop.description}
+      <div className="girls-player-text">
+        {prop.name}
+        <br></br>
+        {prop.description}
+      </div>
+      <div
+        className={
+          openSocial
+            ? "open-girls-player-socials"
+            : "closed-girls-players-socials"
+        }
+      >
+        <a
+          className="instagram"
+          href={prop.insta}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            icon={faInstagram}
+            color="white"
+            className="icon-boys"
+          />
+        </a>
+      </div>
     </div>
   );
 }
@@ -313,12 +355,12 @@ function Open() {
 function PlusOpenDescription() {
   return (
     <svg
-      width="40px"
       height="40px"
+      width="40px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
+      transform="rotate(180)"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -329,11 +371,10 @@ function PlusOpenDescription() {
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
-          d="M4 12H20M12 4V20"
-          stroke="#ffffff"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071C19.3166 12.0976 18.6834 12.0976 18.2929 11.7071L13 6.41421V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V6.41421L5.70711 11.7071C5.31658 12.0976 4.68342 12.0976 4.29289 11.7071C3.90237 11.3166 3.90237 10.6834 4.29289 10.2929L11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3Z"
+          fill="#ffffff"
         ></path>{" "}
       </g>
     </svg>
@@ -343,12 +384,12 @@ function PlusOpenDescription() {
 function MinusOpenDescription() {
   return (
     <svg
-      width="40px"
       height="40px"
+      width="40px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffffff"
+      transform="rotate(0)"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g
@@ -359,11 +400,10 @@ function MinusOpenDescription() {
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
-          d="M6 12L18 12"
-          stroke="#ffffff"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12 3C12.2652 3 12.5196 3.10536 12.7071 3.29289L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071C19.3166 12.0976 18.6834 12.0976 18.2929 11.7071L13 6.41421V20C13 20.5523 12.5523 21 12 21C11.4477 21 11 20.5523 11 20V6.41421L5.70711 11.7071C5.31658 12.0976 4.68342 12.0976 4.29289 11.7071C3.90237 11.3166 3.90237 10.6834 4.29289 10.2929L11.2929 3.29289C11.4804 3.10536 11.7348 3 12 3Z"
+          fill="#ffffff"
         ></path>{" "}
       </g>
     </svg>
