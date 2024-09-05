@@ -75,9 +75,6 @@ export default function Bottombar() {
                     <Link to="/Girls" className="bot-link">
                       GIRLS
                     </Link>
-                    <Link to="/Coaches" className="bot-link">
-                      COACHES
-                    </Link>
                   </div>
                 </div>
               </div>

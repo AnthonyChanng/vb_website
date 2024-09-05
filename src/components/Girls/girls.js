@@ -54,7 +54,7 @@ export default function Girls() {
               <PlusOpenDescription />
             </div>
             <div
-              id={openDescription ? "open-second-girls" : "closed-second-boys"}
+              id={openDescription ? "open-second-girls" : "closed-second-girls"}
             >
               <br></br>The team has a great relationship on and off the court,
               which speaks volumes to the environment built by the coaches and
@@ -69,61 +69,56 @@ export default function Girls() {
               seriously and strive to grow as a team and people. We encourage
               all girls to tryout, regardless of their skill in volleyball!
               Tryouts are in August and be sure to join the Google Classroom for
-              extra details.{" "}
-              <div className="girls-awards">
-                <h1>TEAM AWARDS:</h1>
-                Madison Patton: All Skyland Conference Delware Divison First
-                Team <br></br>
-                Isabel Rivera: All Skyland Conference Delware Divison First Team{" "}
-                <br></br>
-                Irene Papanastasiou: All Skyland Conference Delware Divison
-                Second Team <br></br>
-                Vasi Papanastasiou: All Skyland Conference Delware Divison
-                Second Team <br></br>
-                Izzy Antunes: All Skyland Conference Delware Divison Honorable
-                Mention <br></br>
-              </div>
+              extra details. <h1>TEAM AWARDS:</h1>
+              Madison Patton: All Skyland Conference Delware Divison First Team{" "}
+              <br></br>
+              Isabel Rivera: All Skyland Conference Delware Divison First Team{" "}
+              <br></br>
+              Irene Papanastasiou: All Skyland Conference Delware Divison Second
+              Team <br></br>
+              Vasi Papanastasiou: All Skyland Conference Delware Divison Second
+              Team <br></br>
+              Izzy Antunes: All Skyland Conference Delware Divison Honorable
+              Mention <br></br>
               <h3>Team Socials:</h3>
-              <div className="socials-girls">
-                <div className="girls-insta">
-                  <a
-                    className="instagram"
-                    href="https://www.instagram.com/brhsgirlsvb/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FontAwesomeIcon
-                      icon={faInstagram}
-                      color="white"
-                      className="icon-girls"
-                    />
-                  </a>
-                  <div className="girls-title">Girls Instagram</div>
-                </div>
-                <div className="BRVBhudl">
-                  <a
-                    href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {" "}
-                    <img className="girls-Hudl" src={hudl} alt="hudl" /> {""}
-                  </a>
-                  <div className="girls-title">Girls Hudl</div>
-                </div>
+              <div className="girls-insta">
+                <a
+                  className="instagram"
+                  href="https://www.instagram.com/brhsgirlsvb/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    color="white"
+                    className="icon-girls"
+                  />
+                </a>
+                <div className="girls-title">Girls Instagram</div>
               </div>
-            </div>
-            <div
-              id={
-                openDescription
-                  ? "girls-description-closed"
-                  : "girls-description-open"
-              }
-              onClick={() => {
-                setOpenDescription(!openDescription);
-              }}
-            >
-              <MinusOpenDescription />
+              <div className="BRVBhudl">
+                <a
+                  href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <img className="girls-Hudl" src={hudl} alt="hudl" /> {""}
+                </a>
+                <div className="girls-title">Girls Hudl</div>
+              </div>
+              <div
+                id={
+                  openDescription
+                    ? "girls-description-closed"
+                    : "girls-description-open"
+                }
+                onClick={() => {
+                  setOpenDescription(!openDescription);
+                }}
+              >
+                <MinusOpenDescription />
+              </div>
             </div>
           </div>
         </div>
@@ -140,7 +135,12 @@ export default function Girls() {
               insta="https://www.instagram.com/liel.raines/"
               src={liel}
             />
-            <Player description="#2, Libero/DS" name="Jada Otero" src={jada} />
+            <Player
+              description="#2, Libero/DS"
+              name="Jada Otero"
+              src={jada}
+              insta="https://www.instagram.com/oterojada/"
+            />
             <Player
               description="#6, Outside Hitter/DS"
               name="Liya Medallion"
@@ -293,34 +293,21 @@ export default function Girls() {
 }
 
 function Player(prop) {
-  const [openSocial, setOpenSocials] = useState(false);
   return (
-    <div className="girls-player" onClick={() => setOpenSocials(!openSocial)}>
-      <img className="girls-player-img" src={prop.src} alt="" />
+    <div className="girls-player">
+      <a
+        className="instagram"
+        href={prop.insta}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className="girls-player-img" src={prop.src} alt="" />
+      </a>
+
       <div className="girls-player-text">
         {prop.name}
         <br></br>
         {prop.description}
-      </div>
-      <div
-        className={
-          openSocial
-            ? "open-girls-player-socials"
-            : "closed-girls-players-socials"
-        }
-      >
-        <a
-          className="instagram"
-          href={prop.insta}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faInstagram}
-            color="white"
-            className="icon-boys"
-          />
-        </a>
       </div>
     </div>
   );

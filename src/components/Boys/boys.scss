@@ -75,7 +75,7 @@
   text-align: center;
 }
 .boys-player-img {
-  height: 65%;
+  width: 100%;
   border-radius: 8px;
 }
 .boys-player-img:hover {
@@ -133,13 +133,11 @@
 .news-title {
   border-bottom: 4px solid grey;
 }
-.open-coach-description {
-  transition: all 1s ease-in-out;
-}
 
 .closed-coach-description {
   opacity: 0;
   height: 0;
+  font-size: 0;
 }
 
 .open-button {
@@ -156,10 +154,6 @@
   position: absolute;
   translate: 10px 950px;
 }
-#open-rom1 {
-  transition: all 1s ease-in-out;
-}
-
 #closed-rom1 {
   opacity: 0;
   height: 0;
@@ -177,17 +171,18 @@
   height: 0;
   width: 0;
 }
-#open-second-boys {
-  transition: all 1s ease-in-out;
-}
 #closed-romanak1 {
   height: 0;
-  width: 0;
 }
 #closed-second-boys {
   opacity: 0;
   height: 0;
   font-size: 0;
+}
+
+#open-second-boys {
+  height: 100%;
+  opacity: 100;
 }
 
 #boys-description-open {

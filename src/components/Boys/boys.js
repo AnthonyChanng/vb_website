@@ -256,34 +256,20 @@ export default function Boys() {
 }
 
 function Player(prop) {
-  const [openSocial, setOpenSocials] = useState(false);
   return (
-    <div className="boys-player" onClick={() => setOpenSocials(!openSocial)}>
-      <img className="boys-player-img" src={prop.src} alt="" />
+    <div className="boys-player">
+      <a
+        className="instagram"
+        href={prop.insta}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className="boys-player-img" src={prop.src} alt="" />
+      </a>
       <div className="boys-player-text">
         {prop.name}
         <br></br>
         {prop.description}
-      </div>
-      <div
-        className={
-          openSocial
-            ? "open-boys-player-socials"
-            : "closed-boys-players-socials"
-        }
-      >
-        <a
-          className="instagram"
-          href={prop.insta}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FontAwesomeIcon
-            icon={faInstagram}
-            color="white"
-            className="icon-boys"
-          />
-        </a>
       </div>
     </div>
   );

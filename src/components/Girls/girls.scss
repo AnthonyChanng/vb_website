@@ -33,7 +33,7 @@
 }
 
 .girls-insta {
-  width: 50%;
+  width: 10%;
   height: 10%;
 }
 
@@ -73,10 +73,12 @@
 }
 .girls-player-img {
   height: 270px;
+  width: 100%;
   border-radius: 8px;
+  margin: 7.5px;
 }
 .girls-player-img:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   transition: 1s;
 }
 .girls-player-text {
@@ -139,7 +141,9 @@
   opacity: 0;
   height: 0;
 }
-
+#open-josh2 {
+  height: 0;
+}
 #open-josh2-div {
   opacity: 0;
   height: 0;
@@ -160,13 +164,10 @@
   margin: 0 46.5%;
 }
 
-#open-second-girls {
-  transition: all 1s ease-in-out;
-}
-
 #closed-second-girls {
   opacity: 0;
   height: 0;
+  font-size: 0;
 }
 .open-girls-player-socials {
   width: 25%;
