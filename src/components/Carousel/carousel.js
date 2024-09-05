@@ -9,8 +9,8 @@ export function Carousel({ images }) {
   const timeOutRef = useRef(null);
 
   useEffect(() => {
-    timeOutRef = timeOutRef.current =
-      autoPlay &&
+    timeOutRef = timeOutRef.current;
+    autoPlay &&
       setTimeout(() => {
         slideRight();
       }, 1000);
