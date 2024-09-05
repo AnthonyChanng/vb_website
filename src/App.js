@@ -1,7 +1,7 @@
 import "./App.scss";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/home/home";
+import Home from "./components/Home/home";
 import Layout from "./components/Layout/layout";
 import Boys from "./components/Boys/boys";
 import Girls from "./components/Girls/girls";

@@ -42,7 +42,7 @@ export function Carousel({ images }) {
             <div
               key={index}
               className={
-                index == current
+                index === current
                   ? "carousel_card carousel_card-active"
                   : "carousel_card"
               }
@@ -63,7 +63,7 @@ export function Carousel({ images }) {
               <div
                 key={index}
                 className={
-                  index == current
+                  index === current
                     ? "pagination_dot pagination_dot-active"
                     : "pagination_dot"
                 }
