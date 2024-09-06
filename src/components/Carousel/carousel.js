@@ -13,7 +13,7 @@ export function Carousel({ images }) {
       autoPlay &&
       setTimeout(() => {
         slideRight();
-      }, 1000);
+      }, 10000);
   });
 
   const slideRight = () => {
