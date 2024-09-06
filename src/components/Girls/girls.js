@@ -12,8 +12,8 @@ import hannah from "../../assets/images/girlsTeam/hannah.jpg";
 import irene from "../../assets/images/girlsTeam/irene.jpg";
 import blank from "../../assets/images/girlsTeam/blank.png";
 import josh from "../../assets/images/coachJosh.jpg";
-import girlsNews1 from "../../assets/images/girlsNews1.png";
-import girlsNews2 from "../../assets/images/girlsNews2.jpg";
+import girlsNews1 from "../../assets/images/girlsNew1.jpg";
+import girlsNews2 from "../../assets/images/girlsNews2.jpeg";
 import josh2 from "../../assets/images/josh2.jpg";
 import React, { useState } from "react";
 import "./girls.scss";
@@ -58,13 +58,13 @@ export default function Girls() {
             >
               <br></br>The team has a great relationship on and off the court,
               which speaks volumes to the environment built by the coaches and
-              past players. A team bond is important to any sport and the one in
-              BRHS Girls Volleyball Program is few and far between. There's a
-              dynamic within the program that is a joy to be a part of and
+              past players. A team bond is important to any sport, and the one
+              in BRHS Girls Volleyball Program is few and far between. There's a
+              dynamic within the program that is a joy to be a part of, and
               everyone genuinely enjoys their time there. <br></br> <br></br>
               With Coach Josh Everett at the helm, the team is an amazing thing
               to be a part of. Winning isn't everything, even though we do win a
-              lot, the way we see it, every day is an opportunity to get better.
+              lot. The way we see it, every day is an opportunity to get better.
               Be it a win or a loss, a practice or a game, we take every day
               seriously and strive to grow as a team and people. We encourage
               all girls to tryout, regardless of their skill in volleyball!
@@ -266,24 +266,25 @@ export default function Girls() {
             </div>
             <div className="girls-news-item">
               <a
-                href="https://www.nj.com/highschoolsports/2024/08/girls-volleyball-all-time-leaders-in-coaching-wins-entering-2024-season.html"
+                href="https://www.nj.com/highschoolsports/2024/09/girls-volleyball-results-recaps-photos-for-wednesday-sept-5.html"
                 target="blank"
                 rel="noreferrer"
               >
                 <img className="girls-news-img" src={girlsNews1} alt="" />
               </a>
-              Girls volleyball: All-time leaders in coaching wins entering 2024
+              Girls volleyball: Results, recaps & photos for Thursday, Sept. 5
               season
             </div>
             <div className="girls-news-item">
               <a
-                href="https://www.nj.com/highschoolsports/2024/08/compelling-girls-volleyball-storylines-to-follow-in-2024.html"
+                href="https://www.nj.com/highschoolsports/2024/08/girls-volleyball-preseason-top-20-2024-season.html"
                 target="blank"
                 rel="noreferrer"
               >
                 <img className="girls-news-img" src={girlsNews2} alt="" />
               </a>
-              Compelling girls volleyball storylines to follow in 2024
+              Girls volleyball preseason Top 20: Who's looking excellent to
+              start 2024?
             </div>
           </div>
         </div>

@@ -51,21 +51,6 @@ const Home = () => {
             <h1>UPCOMING GAMES</h1>
             <div className="games">
               <div className="schedule-block">
-                <h2 className="game-title">Bridgewater VS Hunterdon Central</h2>
-                <h3 className="date">Septemeber 5th, 4:00 P.M.</h3>
-                <h3 className="team">
-                  <a
-                    href="https://www.google.com/maps/place/Hunterdon+Central+Regional+High+School/@40.5171466,-74.8519383,15z/data=!4m6!3m5!1s0x89c3f15f94d1dd7f:0x19c03eb60b9149da!8m2!3d40.5171466!4d-74.8519383!16zL20vMDlicjhy?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="maps-link">
-                      All Girls Games @ Hunterdon Central Regional HS
-                    </div>
-                  </a>
-                </h3>
-              </div>
-              <div className="schedule-block">
                 <h2 className="game-title">Bridgewater VS Hillsborough </h2>
                 <h3 className="date">Septemeber 10th, 4:00 P.M.</h3>
                 <h3 className="team">
@@ -107,6 +92,31 @@ const Home = () => {
                   </a>
                 </h3>
               </div>
+              <div className="schedule-block">
+                <h2 className="game-title">Bridgewater VS North Hunterdon</h2>
+                <h3 className="date">Septemeber 12th, 4:00 P.M.</h3>
+                <h3 className="team">
+                  <a
+                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      Girls Freshman @ Bridgewater-Raritan HS
+                    </div>
+                  </a>
+                  <br></br>
+                  <a
+                    href="https://www.google.com/maps/place/North+Hunterdon+Regional+High+School/@40.6284998,-74.8840778,15z/data=!4m2!3m1!1s0x0:0x86464c18df2ea4c9?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="maps-link">
+                      Girls J.V. & Varsity @ North Hunterdon HS
+                    </div>
+                  </a>
+                </h3>
+              </div>
             </div>
           </div>
         </div>
@@ -117,30 +127,12 @@ const Home = () => {
             <div className="left-side-third">
               <div className="current-standings">
                 <h1>Skyland Conference Delware Divison Standings</h1>
-                <div className="standing-items">
-                  <div className="standings-title">Bridgewater-Raritan</div>
-                  <div className="standings-record">0-0</div>
-                </div>
-                <div className="standing-items">
-                  <div className="standings-title">Hillsborough</div>
-                  <div className="standings-record">0-0</div>
-                </div>
-                <div className="standing-items">
-                  <div className="standings-title">Hunterdon Central</div>
-                  <div className="standings-record">0-0</div>
-                </div>
-                <div className="standing-items">
-                  <div className="standings-title">Montgonmery</div>
-                  <div className="standings-record">0-0</div>
-                </div>
-                <div className="standing-items">
-                  <div className="standings-title">North Hunterdon</div>
-                  <div className="standings-record">0-0</div>
-                </div>
-                <div className="standing-items">
-                  <div className="standings-title">Watchung Hills</div>
-                  <div className="standings-record">0-0</div>
-                </div>
+                <StandingBlock name="North Hunterdon" record="1-0" />
+                <StandingBlock name="Montgomery" record="1-0" />
+                <StandingBlock name="Hunterdon Central" record="1-0" />
+                <StandingBlock name="Bridgewater-Raritan" record="0-2" />
+                <StandingBlock name="Hillsborough" record="0-1" />
+                <StandingBlock name="Watchung Hills" record="0-1" />
               </div>
               <div className="third-imgs">
                 <img
@@ -181,3 +173,12 @@ const Home = () => {
 };
 
 export default Home;
+
+function StandingBlock(prop) {
+  return (
+    <div className="standing-items">
+      <div className="standings-title">{prop.name}</div>
+      <div className="standings-record">{prop.record}</div>
+    </div>
+  );
+}

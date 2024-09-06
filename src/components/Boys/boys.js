@@ -36,7 +36,7 @@ export default function Boys() {
             in a row. Many players gained awards for their performance
             throughout the season and everyone had their fair share of time in
             the spotlight. Although there were a few keys pieces who graduated
-            last year, a large part of this championship core has remained put.{" "}
+            last year, a large part of this championship core has stayed put.{" "}
             <br></br>
             <div
               id={
@@ -204,9 +204,9 @@ export default function Boys() {
             >
               Coach Corey Romanak has been the head coach of the
               Bridgewater-Raritan High School Boys Varsity Volleyball program
-              for over 25 years and was also the head coach of the girls program
-              before stepping down last year. Under his leadership, the boys
-              team has won two state championships and multiple county
+              for over 25 years, and was also the head coach of the girls
+              program, before stepping down last year. Under his leadership, the
+              boys team has won two state championships and multiple county
               tournaments. The excellent coaching ability he possesses can't be
               underestimated. His skill and bravado push his players to do their
               best on and off the court and the level of respect that he
