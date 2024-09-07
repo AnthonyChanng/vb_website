@@ -4,17 +4,14 @@
   justify-content: space-between;
   flex-direction: column;
 }
-.socials-girls {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-}
+
 .girls-description {
   width: 100%;
   height: 100%;
-  font-size: 17.5px;
+  font-size: 20px;
   border-top: 4px solid grey;
-  padding-top: 10px;
+  padding-top: 40px;
+  text-align: center;
 }
 
 .imageGallery {
@@ -33,8 +30,9 @@
 }
 
 .girls-insta {
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
+  margin: 0 10px;
 }
 
 .girls-title {
@@ -85,7 +83,7 @@
   height: 10%;
 }
 .girls-roster {
-  margin-top: 10px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -103,8 +101,7 @@
 #closed-josh1,
 #closed-josh2 {
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 40px 0;
   border-radius: 8px;
 }
 .coach-title {
@@ -153,8 +150,7 @@
 
 #girls-description-closed {
   margin-top: 10px;
-  width: 3.5%;
-  margin: 0 46.5%;
+  justify-content: center;
 }
 
 #closed-second-girls {

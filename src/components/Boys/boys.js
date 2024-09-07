@@ -79,32 +79,31 @@ export default function Boys() {
               Team
               <br></br>Sudarshan Ganapathy: Conference Second Team<br></br>
               Coach Corey Romanak: Skyland Conference Coach of the Year
-              <h3>Team Socials:</h3>
-              <div className="boys-insta">
-                <a
-                  className="instagram"
-                  href="https://www.instagram.com/brboysvolleyball/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    color="white"
-                    className="icon-boys"
-                  />
-                </a>
-                <div className="boys-title">Boys Instagram</div>
-              </div>
-              <div className="BRVBhudl">
-                <a
-                  href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
-                </a>
-                <div className="boys-title">Boys Hudl</div>
+              <div className="socials">
+                <div className="boys-insta">
+                  <a
+                    className="instagram"
+                    href="https://www.instagram.com/brboysvolleyball/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      color="white"
+                      className="icon-boys"
+                    />
+                  </a>
+                </div>
+                <div className="BRVBhudl">
+                  <a
+                    href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324160/boys-varsity-volleyball"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <img className="boys-Hudl" src={hudl} alt="hudl" /> {""}
+                  </a>
+                </div>
               </div>
             </div>
             <div

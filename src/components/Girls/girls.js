@@ -80,32 +80,31 @@ export default function Girls() {
               Team <br></br>
               Izzy Antunes: All Skyland Conference Delware Divison Honorable
               Mention <br></br>
-              <h3>Team Socials:</h3>
-              <div className="girls-insta">
-                <a
-                  className="instagram"
-                  href="https://www.instagram.com/brhsgirlsvb/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    color="white"
-                    className="icon-girls"
-                  />
-                </a>
-                <div className="girls-title">Girls Instagram</div>
-              </div>
-              <div className="BRVBhudl">
-                <a
-                  href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <img className="girls-Hudl" src={hudl} alt="hudl" /> {""}
-                </a>
-                <div className="girls-title">Girls Hudl</div>
+              <div className="socials">
+                <div className="girls-insta">
+                  <a
+                    className="instagram"
+                    href="https://www.instagram.com/brhsgirlsvb/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      color="white"
+                      className="icon-girls"
+                    />
+                  </a>
+                </div>
+                <div className="BRVBhudl">
+                  <a
+                    href="https://fan.hudl.com/usa/nj/bridgewater/organization/24379/bridgewater-raritan-high-school/team/324159/girls-varsity-volleyball"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {" "}
+                    <img className="girls-Hudl" src={hudl} alt="hudl" /> {""}
+                  </a>
+                </div>
               </div>
               <div
                 id={

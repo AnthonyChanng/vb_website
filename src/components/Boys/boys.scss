@@ -3,17 +3,19 @@
   display: flex;
   flex-direction: column;
 }
-.socials-boys {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-}
 
 .boys-description {
   border-top: 4px solid grey;
-  padding-top: 10px;
-  width: 100%;
-  height: 100%;
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+  padding-top: 40px;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
 }
 .imageGallery {
   width: 100%;
@@ -26,8 +28,9 @@
 }
 
 .BRVBhudl {
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
+  margin: 0 10px;
 }
 .icon-boys {
   width: 100%;
@@ -35,8 +38,9 @@
 }
 
 .boys-insta {
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
+  margin: 0 10px;
 }
 
 .boys-title {
@@ -84,7 +88,7 @@
   height: 10%;
 }
 .boys-roster {
-  margin-top: 10px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -101,8 +105,7 @@
 #closed-romanak2,
 #closed-romanak1 {
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 40px 0;
   border-radius: 8px;
 }
 .coach-title {
@@ -187,8 +190,7 @@
 
 #boys-description-closed {
   margin-top: 10px;
-  width: 3.5%;
-  margin: 0 46.5%;
+  justify-content: center;
 }
 
 .open-boys-player-socials {
