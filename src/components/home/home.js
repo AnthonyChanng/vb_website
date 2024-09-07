@@ -1,9 +1,6 @@
 import "./home.scss";
 import boys from "../../assets/images/boysfinal.jpg";
 import merch from "../../assets/images/merch.jpg";
-import homeGirls1 from "../../assets/images/homeGirls1.jpg";
-import homeGirls2 from "../../assets/images/homeGirls2.jpg";
-import homeGirls3 from "../../assets/images/homeGirls3.jpg";
 const Home = () => {
   return (
     <>
@@ -22,7 +19,7 @@ const Home = () => {
       <section>
         <div className="container description-container">
           <div className="description">
-            <h1>WELCOME TO BR VOLLEYBALL</h1>
+            <h1>WELCOME TO BRIDGEWATER-RARITAN VOLLEYBALL</h1>
             <div className="descriptionSummary">
               Panthers Volleyball is one of the most accomplished programs in NJ
               volleyball history. The 11 time state champs are a dominant power
@@ -55,65 +52,41 @@ const Home = () => {
                 <h3 className="date">Septemeber 10th, 4:00 P.M.</h3>
                 <h3 className="team">
                   <a
-                    href="https://www.google.com/maps/place/Hillsborough+High+School/@40.4963594,-74.6556901,15z/data=!4m2!3m1!1s0x0:0x9bb7efed2f51efc9?sa=X&ved=1t:2428&ictx=111"
+                    href="https://www.skylandconferencenj.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&school_id=4&G5button=13&G5genie=380&vw_schoolyear=1&vw_agl=35-3-5%2C&manual_access=1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="maps-link">
-                      Girls Freshman @ Hillsborough HS
-                    </div>
-                  </a>
-                  <br></br>{" "}
-                  <a
-                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="maps-link">
-                      Girls J.V. & Varsity @ Bridgewater-Raritan HS
-                    </div>
+                    <div className="maps-link">@ BRHS</div>
                   </a>
                 </h3>
               </div>
               <div className="schedule-block">
                 <h2 className="game-title">
-                  Bridgewater VS West Windsor-Plainsboro North
+                  Bridgewater VS <br></br>WWP-North
                 </h2>
                 <h3 className="date">Septemeber 11st, 4:00 P.M.</h3>
                 <h3 className="team">
                   <a
-                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
+                    href="https://www.skylandconferencenj.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&school_id=4&G5button=13&G5genie=380&vw_schoolyear=1&vw_agl=35-3-5%2C&manual_access=1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="maps-link">
-                      All Girls Games @ Bridgewater-Raritan HS
-                    </div>
+                    <div className="maps-link">@ BRHS</div>
                   </a>
                 </h3>
               </div>
               <div className="schedule-block">
-                <h2 className="game-title">Bridgewater VS North Hunterdon</h2>
+                <h2 className="game-title">
+                  Bridgewater VS <br></br>North Hunterdon
+                </h2>
                 <h3 className="date">Septemeber 12th, 4:00 P.M.</h3>
                 <h3 className="team">
                   <a
-                    href="https://www.google.com/maps/place/Bridgewater-Raritan+Regional+High+School/@40.592983,-74.6345277,15z/data=!4m2!3m1!1s0x0:0xbba3cedb6166d2e8?sa=X&ved=1t:2428&ictx=111"
+                    href="https://www.skylandconferencenj.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&school_id=4&G5button=13&G5genie=380&vw_schoolyear=1&vw_agl=35-3-5%2C&manual_access=1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="maps-link">
-                      Girls Freshman @ Bridgewater-Raritan HS
-                    </div>
-                  </a>
-                  <br></br>
-                  <a
-                    href="https://www.google.com/maps/place/North+Hunterdon+Regional+High+School/@40.6284998,-74.8840778,15z/data=!4m2!3m1!1s0x0:0x86464c18df2ea4c9?sa=X&ved=1t:2428&ictx=111"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="maps-link">
-                      Girls J.V. & Varsity @ North Hunterdon HS
-                    </div>
+                    <div className="maps-link">@ NHHS</div>
                   </a>
                 </h3>
               </div>
@@ -124,34 +97,14 @@ const Home = () => {
       <section>
         <div className="container third-bar-container">
           <div className="third-bar">
-            <div className="left-side-third">
-              <div className="current-standings">
-                <h1>Skyland Conference Delware Divison Standings</h1>
-                <StandingBlock name="North Hunterdon" record="1-0" />
-                <StandingBlock name="Montgomery" record="1-0" />
-                <StandingBlock name="Hunterdon Central" record="1-0" />
-                <StandingBlock name="Bridgewater-Raritan" record="0-2" />
-                <StandingBlock name="Hillsborough" record="0-1" />
-                <StandingBlock name="Watchung Hills" record="0-1" />
-              </div>
-              <div className="third-imgs">
-                <img
-                  className="third-girls-imgs"
-                  src={homeGirls1}
-                  alt="homeGirls1"
-                />
-
-                <img
-                  className="third-girls-imgs"
-                  src={homeGirls3}
-                  alt="homeGirls3"
-                />
-                <img
-                  className="third-girls-imgs"
-                  src={homeGirls2}
-                  alt="homeGirls2"
-                />
-              </div>
+            <div className="current-standings">
+              <h1>Skyland Conference Delware Divison Standings</h1>
+              <StandingBlock name="North Hunterdon" record="1-0" />
+              <StandingBlock name="Montgomery" record="1-0" />
+              <StandingBlock name="Hunterdon Central" record="1-0" />
+              <StandingBlock name="Bridgewater-Raritan" record="0-2" />
+              <StandingBlock name="Hillsborough" record="0-1" />
+              <StandingBlock name="Watchung Hills" record="0-1" />
             </div>
 
             <div className="merch">
@@ -163,7 +116,6 @@ const Home = () => {
               >
                 <img className="merch-logo" src={merch} alt="merch" />
               </a>
-              <h2>BUY AS SOON AS POSSIBLE! THE STORE IS CLOSING SOON!</h2>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import "./navbar.scss";
-import brvb from "../../assets/images/brvb.jpg";
-import highPerform from "../../assets/images/njhighperformance.webp";
+// import brvb from "../../assets/images/brvb.jpg";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
@@ -13,11 +12,11 @@ export default function Navbar() {
         <div className="navbar-container">
           <div className="flex navbar-flex">
             <div id="left-navbar">
-              <div className="logo">
+              {/* <div className="logo">
                 <Link to="/">
                   <img className="img-logo" src={brvb} alt="brvb" />{" "}
                 </Link>
-              </div>
+              </div> */}
               <h1 className="school-name">
                 Bridgewater-Raritan High School Volleyball
               </h1>
@@ -28,14 +27,7 @@ export default function Navbar() {
                 <Link to="/Boys">Boys</Link>
                 <Link to="/Girls">Girls</Link>
               </div>
-              <a
-                href="https://www.njhighperformancevolleyball.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="camp-logo"
-              >
-                <img className="img-high" src={highPerform} alt="highPerform" />
-              </a>
+
               <div className="dropmenu">
                 <div
                   onClick={() => {
