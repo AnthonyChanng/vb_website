@@ -99,11 +99,11 @@ const Home = () => {
           <div className="third-bar">
             <div className="current-standings">
               <h1>Skyland Conference Delware Divison Standings</h1>
-              <StandingBlock name="North Hunterdon" record="1-0" />
+              <StandingBlock name="North Hunterdon" record="2-0" />
+              <StandingBlock name="Hunterdon Central" record="2-0" />
               <StandingBlock name="Montgomery" record="1-0" />
-              <StandingBlock name="Hunterdon Central" record="1-0" />
               <StandingBlock name="Bridgewater-Raritan" record="0-2" />
-              <StandingBlock name="Hillsborough" record="0-1" />
+              <StandingBlock name="Hillsborough" record="0-2" />
               <StandingBlock name="Watchung Hills" record="0-1" />
             </div>
 

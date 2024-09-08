@@ -9,14 +9,13 @@ import corey from "../../assets/images/boysTeam/corey.jpg";
 import andrew from "../../assets/images/boysTeam/andrew.jpg";
 import vihaan from "../../assets/images/boysTeam/vihaan.jpg";
 import rom from "../../assets/images/coachRom.jpg";
-import rom2 from "../../assets/images/rom2.jpg";
+
 import boysNews1 from "../../assets/images/boysNews1.jpg";
 import boysNews2 from "../../assets/images/boysNews2.jpg";
 import React, { useState } from "react";
 import "./boys.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Boys() {
-  const [open, setOpen] = useState(false);
   const [openDescription, setOpenDescription] = useState(false);
   return (
     <>
@@ -174,33 +173,11 @@ export default function Boys() {
               <h1>HEAD COACH COREY ROMANAK</h1>
             </div>
 
-            <div
-              className={open ? "open-button" : "closed-button"}
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              <Open />
+            <div id="open-rom1">
+              <img src={rom} alt="romanak" id="open-romanak1" />
             </div>
-            <div id={open ? "open-rom1" : "closed-rom1"}>
-              <img
-                src={rom}
-                alt="romanak"
-                id={open ? "open-romanak1" : "closed-romanak1"}
-              />
-            </div>
-            <div id={open ? "open-rom2" : "closed-rom2"}>
-              <img
-                src={rom2}
-                alt="romanak"
-                id={open ? "open-romanak2" : "closed-romanak2"}
-              />
-            </div>
-            <div
-              className={
-                open ? "open-coach-description" : "closed-coach-description"
-              }
-            >
+
+            <div className={"open-coach-description"}>
               Coach Corey Romanak has been the head coach of the
               Bridgewater-Raritan High School Boys Varsity Volleyball program
               for over 25 years, and was also the head coach of the girls
@@ -271,33 +248,6 @@ function Player(prop) {
         {prop.description}
       </div>
     </div>
-  );
-}
-
-function Open() {
-  return (
-    <svg
-      width="40px"
-      height="40px"
-      fill="#000000"
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      enable-background="new 0 0 20 20"
-    >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></g>
-      <g id="SVGRepo_iconCarrier">
-        {" "}
-        <path d="M19,20H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h18c0.6,0,1,0.4,1,1v18C20,19.6,19.6,20,19,20z M2,18h16V2H2V18z"></path>{" "}
-        <polygon points="14,9 11,9 11,6 9,6 9,9 6,9 6,11 9,11 9,14 11,14 11,11 14,11 "></polygon>{" "}
-      </g>
-    </svg>
   );
 }
 

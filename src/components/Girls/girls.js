@@ -14,12 +14,11 @@ import blank from "../../assets/images/girlsTeam/blank.png";
 import josh from "../../assets/images/coachJosh.jpg";
 import girlsNews1 from "../../assets/images/girlsNew1.jpg";
 import girlsNews2 from "../../assets/images/girlsNews2.jpeg";
-import josh2 from "../../assets/images/josh2.jpg";
+
 import React, { useState } from "react";
 import "./girls.scss";
 import { Carousel } from "../Carousel/carousel";
 export default function Girls() {
-  const [open, setOpen] = useState(false);
   const [openDescription, setOpenDescription] = useState(false);
   return (
     <>
@@ -214,33 +213,12 @@ export default function Girls() {
             <div className="coach-title">
               <h1>HEAD COACH JOSH EVERETT</h1>
             </div>
-            <div
-              className={open ? "open-button" : "closed-button"}
-              onClick={() => {
-                setOpen(!open);
-              }}
-            >
-              <Open />
+
+            <div id="open-josh1-div">
+              <img src={josh} alt="josh" id="open-josh1" />
             </div>
-            <div id={open ? "open-josh1-div" : "closed-josh1-div"}>
-              <img
-                src={josh}
-                alt="josh"
-                id={open ? "open-josh1" : "closed-josh1"}
-              />
-            </div>
-            <div id={open ? "open-josh2-div" : "closed-josh2-div"}>
-              <img
-                src={josh2}
-                alt="josh"
-                id={open ? "open-josh2" : "closed-josh2"}
-              />
-            </div>
-            <div
-              className={
-                open ? "open-coach-description" : "closed-coach-description"
-              }
-            >
+
+            <div className="open-coach-description">
               The coaching resume of Coach Josh Everett is very impressive.
               Before coming to BRHS as a coach, he coached girls and boys club
               for four seasons. He then transitioned to assistant varsity coach
@@ -313,32 +291,6 @@ function Player(prop) {
   );
 }
 
-function Open() {
-  return (
-    <svg
-      width="40px"
-      height="40px"
-      fill="#000000"
-      version="1.1"
-      id="Layer_1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 20 20"
-      enable-background="new 0 0 20 20"
-    >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></g>
-      <g id="SVGRepo_iconCarrier">
-        {" "}
-        <path d="M19,20H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h18c0.6,0,1,0.4,1,1v18C20,19.6,19.6,20,19,20z M2,18h16V2H2V18z"></path>{" "}
-        <polygon points="14,9 11,9 11,6 9,6 9,9 6,9 6,11 9,11 9,14 11,14 11,11 14,11 "></polygon>{" "}
-      </g>
-    </svg>
-  );
-}
 function PlusOpenDescription() {
   return (
     <svg
