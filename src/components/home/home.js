@@ -48,8 +48,10 @@ const Home = () => {
             <h1>UPCOMING GAMES</h1>
             <div className="games">
               <div className="schedule-block">
-                <h2 className="game-title">Bridgewater VS Hillsborough </h2>
-                <h3 className="date">Septemeber 10th, 4:00 P.M.</h3>
+                <h2 className="game-title">
+                  Bridgewater VS Hunterdon Central{" "}
+                </h2>
+                <h3 className="date">Septemeber 24th, 4:00 P.M.</h3>
                 <h3 className="team">
                   <a
                     href="https://www.skylandconferencenj.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&school_id=4&G5button=13&G5genie=380&vw_schoolyear=1&vw_agl=35-3-5%2C&manual_access=1"
@@ -62,31 +64,33 @@ const Home = () => {
               </div>
               <div className="schedule-block">
                 <h2 className="game-title">
-                  Bridgewater VS <br></br>WWP-North
+                  Bridgewater VS <br></br>Livingston
                 </h2>
-                <h3 className="date">Septemeber 11st, 4:00 P.M.</h3>
+                <h3 className="date">Septemeber 25th, 4:00 P.M.</h3>
                 <h3 className="team">
                   <a
                     href="https://www.skylandconferencenj.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&school_id=4&G5button=13&G5genie=380&vw_schoolyear=1&vw_agl=35-3-5%2C&manual_access=1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="maps-link">@ BRHS</div>
+                    <div className="maps-link">
+                      Varisty @ BRHS <br></br> Rest @ Livingston
+                    </div>
                   </a>
                 </h3>
               </div>
               <div className="schedule-block">
                 <h2 className="game-title">
-                  Bridgewater VS <br></br>North Hunterdon
+                  Bridgewater VS <br></br>Hillsborough
                 </h2>
-                <h3 className="date">Septemeber 12th, 4:00 P.M.</h3>
+                <h3 className="date">Septemeber 26th, 4:00 P.M.</h3>
                 <h3 className="team">
                   <a
                     href="https://www.skylandconferencenj.org/g5-bin/client.cgi?cwellOnly=1&G5statusflag=view&school_id=4&G5button=13&G5genie=380&vw_schoolyear=1&vw_agl=35-3-5%2C&manual_access=1"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="maps-link">@ NHHS</div>
+                    <div className="maps-link">@ Hillsborough</div>
                   </a>
                 </h3>
               </div>
@@ -99,12 +103,12 @@ const Home = () => {
           <div className="third-bar">
             <div className="current-standings">
               <h1>Skyland Conference Delware Divison Standings</h1>
-              <StandingBlock name="North Hunterdon" record="2-0" />
-              <StandingBlock name="Hunterdon Central" record="2-0" />
-              <StandingBlock name="Montgomery" record="1-0" />
-              <StandingBlock name="Bridgewater-Raritan" record="0-2" />
-              <StandingBlock name="Hillsborough" record="0-2" />
-              <StandingBlock name="Watchung Hills" record="0-1" />
+              <StandingBlock name="Hunterdon Central" record="8-0" />
+              <StandingBlock name="North Hunterdon" record="6-3" />
+              <StandingBlock name="Montgomery" record="5-4" />
+              <StandingBlock name="Watchung Hills" record="3-3" />
+              <StandingBlock name="Hillsborough" record="3-5" />
+              <StandingBlock name="Bridgewater-Raritan" record="2-5" />
             </div>
 
             <div className="merch">
